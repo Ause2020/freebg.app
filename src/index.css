@@ -1,0 +1,353 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-ink: #101014;
+  --color-primary: #6c5ce7;
+  --color-primary-dark: #5646c9;
+  --color-primary-light: #a99bff;
+  --color-accent: #c8ff4d;
+  --color-accent-dark: #a3d92e;
+  --color-paper: #faf9f5;
+  --font-sans: "Segoe UI", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Code", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  background-image: radial-gradient(circle, rgba(16, 16, 20, 0.09) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark body {
+  color: #f2f2f5;
+  background-color: #0a0a0e;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Buttons — flat colour, ink border, hard offset shadow that "presses"   */
+/* flat on click. Distinctive alternative to soft SaaS drop-shadows.      */
+/* ---------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.85rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  border: 2px solid var(--color-ink);
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  white-space: nowrap;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 0 var(--color-ink);
+}
+
+.btn:active:not(:disabled) {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 0 var(--color-ink);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-ink);
+}
+.btn-accent:hover:not(:disabled) {
+  background-color: var(--color-accent-dark);
+}
+
+.btn-outline {
+  background-color: #fff;
+  color: var(--color-ink);
+}
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--color-paper);
+}
+
+.btn-sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  border-radius: 0.65rem;
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+}
+.btn-sm:hover:not(:disabled) {
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+}
+.btn-sm:active:not(:disabled) {
+  box-shadow: 0 0 0 0 var(--color-ink);
+}
+
+.dark .btn {
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 0 0 var(--color-accent);
+}
+.dark .btn:hover:not(:disabled) {
+  box-shadow: 4px 4px 0 0 var(--color-accent);
+}
+.dark .btn:active:not(:disabled) {
+  box-shadow: 0 0 0 0 var(--color-accent);
+}
+.dark .btn-sm {
+  box-shadow: 2px 2px 0 0 var(--color-accent);
+}
+.dark .btn-sm:hover:not(:disabled) {
+  box-shadow: 3px 3px 0 0 var(--color-accent);
+}
+.dark .btn-sm:active:not(:disabled) {
+  box-shadow: 0 0 0 0 var(--color-accent);
+}
+.dark .btn-outline {
+  background-color: #17171f;
+  color: #f2f2f5;
+}
+.dark .btn-outline:hover:not(:disabled) {
+  background-color: #1e1e28;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Panels — flat cards with an ink border instead of glassy blur.         */
+/* ---------------------------------------------------------------------- */
+
+.panel {
+  background-color: #fff;
+  border: 2px solid rgba(16, 16, 20, 0.12);
+  border-radius: 1.25rem;
+}
+.dark .panel {
+  background-color: #15151d;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.dark .eyebrow {
+  color: var(--color-primary-light);
+}
+.eyebrow::before {
+  content: "";
+  width: 1.35rem;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: 1px;
+}
+
+.mark-highlight {
+  background-image: linear-gradient(to top, var(--color-accent) 42%, transparent 42%);
+  background-repeat: no-repeat;
+  color: var(--color-ink);
+  padding: 0 0.2em;
+  border-radius: 0.15em;
+}
+
+/* Checkerboard behind transparent results */
+.bg-checker {
+  background-color: #f1f0eb;
+  background-image:
+    linear-gradient(45deg, #e2e0d6 25%, transparent 25%),
+    linear-gradient(-45deg, #e2e0d6 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e2e0d6 75%),
+    linear-gradient(-45deg, transparent 75%, #e2e0d6 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+}
+
+.dark .bg-checker {
+  background-color: #1c1c24;
+  background-image:
+    linear-gradient(45deg, #2a2a34 25%, transparent 25%),
+    linear-gradient(-45deg, #2a2a34 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #2a2a34 75%),
+    linear-gradient(-45deg, transparent 75%, #2a2a34 75%);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/*
+ * fill-mode is intentionally left at its default (none) instead of "both":
+ * the "to" keyframe already matches each element's resting styles, and a
+ * lingering non-"none" transform/opacity from "forwards" would otherwise
+ * create a new containing block that traps any `position: fixed` modal
+ * rendered inside these elements later in the tree.
+ */
+.animate-fade-up {
+  animation: fade-up 0.45s ease-out backwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.35s ease-out backwards;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #e2e0d6 0%, #f1f0eb 50%, #e2e0d6 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.dark .skeleton {
+  background: linear-gradient(90deg, #1c1c24 0%, #2a2a34 50%, #1c1c24 100%);
+  background-size: 200% 100%;
+}
+
+/* Long-form article typography for the SEO content sections */
+.prose-content h2 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-ink);
+}
+
+.dark .prose-content h2 {
+  color: #f5f5f7;
+}
+
+.prose-content p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: #45454e;
+}
+
+.dark .prose-content p {
+  color: #a8a8b3;
+}
+
+.prose-content ul {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.625rem;
+}
+
+.prose-content li {
+  position: relative;
+  padding-left: 1.6rem;
+  line-height: 1.65;
+  color: #45454e;
+}
+
+.dark .prose-content li {
+  color: #a8a8b3;
+}
+
+.prose-content li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.55rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-accent);
+  border: 1.5px solid var(--color-ink);
+  border-radius: 2px;
+}
+
+.dark .prose-content li::before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 640px) {
+  .prose-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-up,
+  .animate-fade-in,
+  .skeleton {
+    animation: none !important;
+  }
+}

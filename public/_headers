@@ -1,0 +1,34 @@
+# Cloudflare Pages headers
+#
+# Cross-origin isolation (COOP/COEP) is intentionally NOT enabled here. It would
+# unlock multi-threaded WASM but also block third-party embeds such as AdSense.
+# To opt in, add these two lines to the /* block and re-test ad rendering:
+#   Cross-Origin-Opener-Policy: same-origin
+#   Cross-Origin-Embedder-Policy: require-corp
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+
+# Content-hashed bundles are immutable.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/samples/*
+  Cache-Control: public, max-age=604800
+
+/*.wasm
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/wasm
+
+# HTML must stay fresh so deploys are picked up immediately.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
