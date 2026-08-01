@@ -1,5 +1,5 @@
-/* BGFree service worker — offline support for the app shell. */
-const VERSION = 'bgfree-v1'
+/* FreeBG service worker — offline support for the app shell. */
+const VERSION = 'freebg-v1'
 const SHELL = ['/', '/manifest.webmanifest', '/favicon.svg']
 
 self.addEventListener('install', (event) => {

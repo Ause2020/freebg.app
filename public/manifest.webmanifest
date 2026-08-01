@@ -1,6 +1,6 @@
 {
-  "name": "BGFree – Free Background Remover",
-  "short_name": "BGFree",
+  "name": "FreeBG – Free Background Remover",
+  "short_name": "FreeBG",
   "description": "Remove image backgrounds free, unlimited and privately. Runs entirely in your browser.",
   "start_url": "/",
   "scope": "/",

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 export type Theme = 'light' | 'dark'
 
-const STORAGE_KEY = 'bgfree-theme'
+const STORAGE_KEY = 'freebg-theme'
 
 function applyTheme(theme: Theme): void {
   document.documentElement.classList.toggle('dark', theme === 'dark')

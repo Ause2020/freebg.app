@@ -113,7 +113,7 @@ export const en: Dictionary = {
   footer: {
     heading: 'Runs 100% in your browser',
     body:
-      'BGFree removes backgrounds locally with on-device AI (WebGPU or WebAssembly). Nothing is uploaded to a server, so your photos stay on your device. No accounts, no watermarks, no daily limits.',
+      'FreeBG removes backgrounds locally with on-device AI (WebGPU or WebAssembly). Nothing is uploaded to a server, so your photos stay on your device. No accounts, no watermarks, no daily limits.',
     product: 'Tools',
     legal: 'Legal',
     openSource: 'Source code',
@@ -126,7 +126,7 @@ export const en: Dictionary = {
 
   pages: {
     home: {
-      title: 'Free Background Remover – No Watermark, Unlimited | BGFree',
+      title: 'Free Background Remover – No Watermark, Unlimited | FreeBG',
       description:
         'Remove image backgrounds free and unlimited. No watermark, no signup, no uploads. Full HD/4K resolution, processed privately in your browser.',
       h1: 'Remove Backgrounds Free. Unlimited. Private.',
@@ -134,9 +134,9 @@ export const en: Dictionary = {
       showTool: true,
       sections: [
         {
-          heading: 'Why BGFree is different',
+          heading: 'Why FreeBG is different',
           paragraphs: [
-            'Most background removers upload your photo to a server, cap you at a handful of free images, then hand back a low-resolution preview with a watermark unless you pay. BGFree does none of that.',
+            'Most background removers upload your photo to a server, cap you at a handful of free images, then hand back a low-resolution preview with a watermark unless you pay. FreeBG does none of that.',
             'The AI model runs inside your browser tab. Your image is read from disk into memory, processed on your own CPU or GPU, and written back out as a transparent PNG. No server ever sees the file, which is why the tool can be genuinely unlimited and free.',
           ],
           bullets: [
@@ -160,14 +160,14 @@ export const en: Dictionary = {
         {
           heading: 'Quality and limits — honestly',
           paragraphs: [
-            'BGFree uses the IS-Net segmentation model, the same family of models behind many paid tools. It handles people, products, animals and vehicles very well, and copes with moderately fine detail such as hair.',
+            'FreeBG uses the IS-Net segmentation model, the same family of models behind many paid tools. It handles people, products, animals and vehicles very well, and copes with moderately fine detail such as hair.',
             'Very fine strands against a busy background, transparent glass and motion blur remain hard for any automatic tool. If an edge is not perfect, switching the background to white or a solid colour usually hides the difference completely.',
             'The first run downloads roughly 40 MB of model and runtime files. That download is cached by your browser, so every image after the first starts instantly.',
           ],
         },
       ],
       howTo: {
-        name: 'How to remove a background with BGFree',
+        name: 'How to remove a background with FreeBG',
         steps: [
           {
             name: 'Add your image',
@@ -189,7 +189,7 @@ export const en: Dictionary = {
       },
       faq: [
         {
-          q: 'Is BGFree really free with no limits?',
+          q: 'Is FreeBG really free with no limits?',
           a: 'Yes. Processing runs on your own device, so serving you a thousand images costs us nothing. There is no quota, no trial and no paid tier gating the output quality.',
         },
         {
@@ -218,7 +218,7 @@ export const en: Dictionary = {
         },
         {
           q: 'How does this compare with remove.bg?',
-          a: 'remove.bg produces excellent results but uploads your image, limits free downloads to low resolution and charges credits for full-size output. BGFree trades a one-off model download for unlimited, full-resolution, private processing at no cost.',
+          a: 'remove.bg produces excellent results but uploads your image, limits free downloads to low resolution and charges credits for full-size output. FreeBG trades a one-off model download for unlimited, full-resolution, private processing at no cost.',
         },
       ],
     },
@@ -277,7 +277,7 @@ export const en: Dictionary = {
           heading: 'A note on privacy',
           paragraphs: [
             'Most free background removers upload your image to their servers. That is fine for a photo of a coffee mug, and a genuine problem for ID documents, medical images, client work under NDA, or photos of children.',
-            'BGFree processes images locally in your browser, so the file never leaves your device. If you handle sensitive images, prefer any tool that can demonstrate this — you can verify it yourself in the browser Network tab.',
+            'FreeBG processes images locally in your browser, so the file never leaves your device. If you handle sensitive images, prefer any tool that can demonstrate this — you can verify it yourself in the browser Network tab.',
           ],
         },
       ],
@@ -286,7 +286,7 @@ export const en: Dictionary = {
         steps: [
           {
             name: 'Open the tool',
-            text: 'Open BGFree in any modern browser. There is nothing to install and no account to create.',
+            text: 'Open FreeBG in any modern browser. There is nothing to install and no account to create.',
           },
           {
             name: 'Add your photo',
@@ -313,7 +313,7 @@ export const en: Dictionary = {
         },
         {
           q: 'Can I remove backgrounds from several images at once?',
-          a: 'Yes. Add multiple files and BGFree will process them in a queue, then let you download everything as a single ZIP.',
+          a: 'Yes. Add multiple files and FreeBG will process them in a queue, then let you download everything as a single ZIP.',
         },
         {
           q: 'Will it work on my phone?',
@@ -334,7 +334,7 @@ export const en: Dictionary = {
       subtitle:
         'Clean white or transparent backgrounds for your listings — free and unlimited.',
       intro:
-        'Marketplace listings convert better with consistent, distraction-free product images, and most marketplaces require a pure white background for the main image. BGFree gives you that in seconds per photo, at full resolution, for an entire catalogue, without per-image credits.',
+        'Marketplace listings convert better with consistent, distraction-free product images, and most marketplaces require a pure white background for the main image. FreeBG gives you that in seconds per photo, at full resolution, for an entire catalogue, without per-image credits.',
       showTool: true,
       sections: [
         {
@@ -346,7 +346,7 @@ export const en: Dictionary = {
             'Google Shopping — no watermarks, borders or promotional text on the product image.',
           ],
           paragraphs: [
-            'Exporting straight onto white with BGFree produces exactly the pure white that these rules ask for, which a photo of a white backdrop rarely does on its own.',
+            'Exporting straight onto white with FreeBG produces exactly the pure white that these rules ask for, which a photo of a white backdrop rarely does on its own.',
           ],
         },
         {
@@ -363,7 +363,7 @@ export const en: Dictionary = {
           heading: 'Why local processing matters for sellers',
           paragraphs: [
             'A product catalogue is commercially sensitive. Unreleased products, supplier packaging and pricing sheets in the frame are all things you may not want sitting on a third-party server, and many free tools reserve broad rights over uploaded content in their terms.',
-            'Because BGFree never transmits your files, there is nothing to leak, retain or license. Your photos stay on the machine you edited them on.',
+            'Because FreeBG never transmits your files, there is nothing to leak, retain or license. Your photos stay on the machine you edited them on.',
           ],
         },
       ],
@@ -420,7 +420,7 @@ export const en: Dictionary = {
           heading: 'Why you should care where your face is processed',
           paragraphs: [
             'A photo of your face is biometric data. Under GDPR it is a special category of personal data when it is used to identify you, and it is exactly the kind of file worth keeping off third-party servers by default.',
-            'BGFree never transmits the image. The model comes to your browser rather than your face going to a server, which means there is no copy of your photo anywhere to be retained, sold or breached.',
+            'FreeBG never transmits the image. The model comes to your browser rather than your face going to a server, which means there is no copy of your photo anywhere to be retained, sold or breached.',
           ],
         },
       ],
@@ -445,9 +445,9 @@ export const en: Dictionary = {
     },
 
     privacy: {
-      title: 'Privacy Policy | BGFree',
+      title: 'Privacy Policy | FreeBG',
       description:
-        'How BGFree handles your data: images are processed entirely in your browser and never uploaded. Full privacy policy.',
+        'How FreeBG handles your data: images are processed entirely in your browser and never uploaded. Full privacy policy.',
       h1: 'Privacy Policy',
       subtitle: 'Short version: your images never reach us, because they never leave your browser.',
       showTool: false,
@@ -455,7 +455,7 @@ export const en: Dictionary = {
         {
           heading: 'Your images',
           paragraphs: [
-            'BGFree performs all background removal locally, inside your web browser, using an AI model that is downloaded to your device. Images you open with the tool are never transmitted to BGFree or to any third party.',
+            'FreeBG performs all background removal locally, inside your web browser, using an AI model that is downloaded to your device. Images you open with the tool are never transmitted to FreeBG or to any third party.',
             'We do not receive, view, store, log, back up or process your images in any form. When you close or reload the page, the image is discarded from memory. You can verify this yourself by opening your browser\'s developer tools and inspecting the Network tab while using the tool.',
           ],
         },
@@ -505,9 +505,9 @@ export const en: Dictionary = {
     },
 
     terms: {
-      title: 'Terms of Service | BGFree',
+      title: 'Terms of Service | FreeBG',
       description:
-        'The terms that apply when you use the BGFree background remover. Free to use, provided as-is, no rights taken over your images.',
+        'The terms that apply when you use the FreeBG background remover. Free to use, provided as-is, no rights taken over your images.',
       h1: 'Terms of Service',
       subtitle: 'Plain terms for a free tool that runs on your own device.',
       showTool: false,
@@ -515,13 +515,13 @@ export const en: Dictionary = {
         {
           heading: 'Acceptance',
           paragraphs: [
-            'By using BGFree you agree to these terms. If you do not agree with them, please do not use the service.',
+            'By using FreeBG you agree to these terms. If you do not agree with them, please do not use the service.',
           ],
         },
         {
           heading: 'The service',
           paragraphs: [
-            'BGFree is a free browser-based tool that removes backgrounds from images using an AI model executed on your own device. No account is required and no fee is charged.',
+            'FreeBG is a free browser-based tool that removes backgrounds from images using an AI model executed on your own device. No account is required and no fee is charged.',
             'Because processing happens locally, the quality, speed and success of any given operation depend on your device, browser and the image itself.',
           ],
         },
@@ -556,7 +556,7 @@ export const en: Dictionary = {
         {
           heading: 'Open source and licensing',
           paragraphs: [
-            'The BGFree web application is open source and distributed under the GNU Affero General Public License v3.0, as required by the background removal library it builds upon. The source code is publicly available, and you are free to inspect, modify and self-host it under the terms of that licence.',
+            'The FreeBG web application is open source and distributed under the GNU Affero General Public License v3.0, as required by the background removal library it builds upon. The source code is publicly available, and you are free to inspect, modify and self-host it under the terms of that licence.',
           ],
         },
         {
@@ -569,9 +569,9 @@ export const en: Dictionary = {
     },
 
     contact: {
-      title: 'Contact | BGFree',
+      title: 'Contact | FreeBG',
       description:
-        'Contact the BGFree team. Send a message through the form — no email client required.',
+        'Contact the FreeBG team. Send a message through the form — no email client required.',
       h1: 'Contact',
       subtitle: 'Questions, feedback or partnership ideas — send us a message.',
       showTool: false,

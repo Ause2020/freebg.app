@@ -1,6 +1,6 @@
-export const SITE_URL = 'https://bgfree.app'
-export const SITE_NAME = 'BGFree'
-export const SITE_TWITTER = '@bgfreeapp'
+export const SITE_URL = 'https://freebg.app'
+export const SITE_NAME = 'FreeBG'
+export const SITE_TWITTER = '@freebgapp'
 export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mvzejble'
 export const SOURCE_URL = 'https://github.com/Ause2020/freebg.app'
 

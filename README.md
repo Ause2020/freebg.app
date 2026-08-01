@@ -1,8 +1,8 @@
-# BGFree.app
+# FreeBG.app
 
 Free, unlimited, full-resolution background remover that runs **100% in the browser**. No uploads, no accounts, no watermarks.
 
-**Live:** [bgfree.app](https://bgfree.app)
+**Live:** [freebg.app](https://freebg.app)
 
 The AI model is downloaded to the visitor's device and executed there. Nothing is ever transmitted to a server, which is why the tool can be genuinely unlimited and free — there is no per-image cost to recover.
 
@@ -143,4 +143,4 @@ No image ever leaves the device. You can verify this in the browser's Network ta
 
 Distributed under the **GNU AGPL v3.0** (see [`LICENSE`](./LICENSE)).
 
-`@imgly/background-removal` is AGPL-3.0. Because this application is offered to users over a network, the AGPL's network clause requires that the complete corresponding source be made available to those users. That is why this repository is public and why the footer links to it on every page. If you fork or self-host BGFree, keep that link pointing at *your* source.
+`@imgly/background-removal` is AGPL-3.0. Because this application is offered to users over a network, the AGPL's network clause requires that the complete corresponding source be made available to those users. That is why this repository is public and why the footer links to it on every page. If you fork or self-host FreeBG, keep that link pointing at *your* source.

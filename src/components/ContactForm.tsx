@@ -35,7 +35,7 @@ export function ContactForm() {
           name: name.trim(),
           email: email.trim(),
           message: message.trim(),
-          _subject: `BGFree contact from ${name.trim()}`,
+          _subject: `FreeBG contact from ${name.trim()}`,
           _gotcha: '',
         }),
       })

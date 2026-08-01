@@ -113,7 +113,7 @@ export const es: Dictionary = {
   footer: {
     heading: 'Funciona 100% en tu navegador',
     body:
-      'BGFree quita fondos en local con IA en el dispositivo (WebGPU o WebAssembly). No se sube nada a ningún servidor, así que tus fotos se quedan contigo. Sin cuentas, sin marcas de agua y sin límites diarios.',
+      'FreeBG quita fondos en local con IA en el dispositivo (WebGPU o WebAssembly). No se sube nada a ningún servidor, así que tus fotos se quedan contigo. Sin cuentas, sin marcas de agua y sin límites diarios.',
     product: 'Herramientas',
     legal: 'Legal',
     openSource: 'Código fuente',
@@ -126,7 +126,7 @@ export const es: Dictionary = {
 
   pages: {
     home: {
-      title: 'Quitar Fondo a una Imagen Gratis – Sin Marca de Agua | BGFree',
+      title: 'Quitar Fondo a una Imagen Gratis – Sin Marca de Agua | FreeBG',
       description:
         'Quita el fondo de tus imágenes gratis y sin límites. Sin marca de agua, sin registro y sin subir archivos. Resolución completa HD/4K, todo en tu navegador.',
       h1: 'Quita el fondo de tus imágenes. Gratis, ilimitado y privado.',
@@ -134,9 +134,9 @@ export const es: Dictionary = {
       showTool: true,
       sections: [
         {
-          heading: 'Por qué BGFree es diferente',
+          heading: 'Por qué FreeBG es diferente',
           paragraphs: [
-            'La mayoría de las webs para quitar fondos suben tu foto a un servidor, te limitan a unas pocas imágenes gratis y luego te devuelven una vista previa en baja resolución con marca de agua si no pagas. BGFree no hace nada de eso.',
+            'La mayoría de las webs para quitar fondos suben tu foto a un servidor, te limitan a unas pocas imágenes gratis y luego te devuelven una vista previa en baja resolución con marca de agua si no pagas. FreeBG no hace nada de eso.',
             'El modelo de IA se ejecuta dentro de la pestaña de tu navegador. Tu imagen se lee desde el disco a la memoria, se procesa con tu propia CPU o GPU y se guarda como un PNG transparente. Ningún servidor ve el archivo, y por eso la herramienta puede ser realmente gratis e ilimitada.',
           ],
           bullets: [
@@ -160,14 +160,14 @@ export const es: Dictionary = {
         {
           heading: 'Calidad y límites, con honestidad',
           paragraphs: [
-            'BGFree usa el modelo de segmentación IS-Net, de la misma familia que utilizan muchas herramientas de pago. Funciona muy bien con personas, productos, animales y vehículos, y se defiende bien con detalles finos como el pelo.',
+            'FreeBG usa el modelo de segmentación IS-Net, de la misma familia que utilizan muchas herramientas de pago. Funciona muy bien con personas, productos, animales y vehículos, y se defiende bien con detalles finos como el pelo.',
             'Los mechones muy finos sobre un fondo recargado, el cristal transparente y el desenfoque de movimiento siguen siendo difíciles para cualquier herramienta automática. Si un borde no queda perfecto, cambiar el fondo a blanco o a un color sólido suele disimular la diferencia por completo.',
             'La primera vez se descargan unos 40 MB de modelo y motor. Esa descarga queda en la caché del navegador, así que a partir de la segunda imagen todo es inmediato.',
           ],
         },
       ],
       howTo: {
-        name: 'Cómo quitar el fondo con BGFree',
+        name: 'Cómo quitar el fondo con FreeBG',
         steps: [
           {
             name: 'Añade tu imagen',
@@ -218,7 +218,7 @@ export const es: Dictionary = {
         },
         {
           q: '¿Cómo se compara con remove.bg?',
-          a: 'remove.bg da resultados excelentes, pero sube tu imagen, limita las descargas gratuitas a baja resolución y cobra créditos por el tamaño completo. BGFree cambia una descarga inicial del modelo por procesamiento ilimitado, privado y a resolución completa sin coste.',
+          a: 'remove.bg da resultados excelentes, pero sube tu imagen, limita las descargas gratuitas a baja resolución y cobra créditos por el tamaño completo. FreeBG cambia una descarga inicial del modelo por procesamiento ilimitado, privado y a resolución completa sin coste.',
         },
       ],
     },
@@ -277,7 +277,7 @@ export const es: Dictionary = {
           heading: 'Una nota sobre privacidad',
           paragraphs: [
             'La mayoría de las webs gratuitas para quitar fondos suben tu imagen a sus servidores. Eso da igual con la foto de una taza, y es un problema real con documentos de identidad, imágenes médicas, trabajo de cliente bajo acuerdo de confidencialidad o fotos de menores.',
-            'BGFree procesa las imágenes en local en tu navegador, así que el archivo nunca sale de tu dispositivo. Si manejas imágenes sensibles, elige siempre una herramienta que pueda demostrarlo: puedes comprobarlo tú mismo en la pestaña Red del navegador.',
+            'FreeBG procesa las imágenes en local en tu navegador, así que el archivo nunca sale de tu dispositivo. Si manejas imágenes sensibles, elige siempre una herramienta que pueda demostrarlo: puedes comprobarlo tú mismo en la pestaña Red del navegador.',
           ],
         },
       ],
@@ -286,7 +286,7 @@ export const es: Dictionary = {
         steps: [
           {
             name: 'Abre la herramienta',
-            text: 'Abre BGFree en cualquier navegador moderno. No hay nada que instalar ni ninguna cuenta que crear.',
+            text: 'Abre FreeBG en cualquier navegador moderno. No hay nada que instalar ni ninguna cuenta que crear.',
           },
           {
             name: 'Añade tu foto',
@@ -313,7 +313,7 @@ export const es: Dictionary = {
         },
         {
           q: '¿Puedo quitar el fondo a varias imágenes a la vez?',
-          a: 'Sí. Añade varios archivos y BGFree los procesará en cola, y después podrás descargarlo todo en un único ZIP.',
+          a: 'Sí. Añade varios archivos y FreeBG los procesará en cola, y después podrás descargarlo todo en un único ZIP.',
         },
         {
           q: '¿Funcionará en mi móvil?',
@@ -334,7 +334,7 @@ export const es: Dictionary = {
       subtitle:
         'Fondo blanco o transparente para tus fichas de producto, gratis y sin límites.',
       intro:
-        'Las fichas de producto convierten mejor con imágenes consistentes y sin distracciones, y la mayoría de los marketplaces exigen fondo blanco puro en la imagen principal. BGFree te lo da en segundos por foto, a resolución completa y para todo un catálogo, sin créditos por imagen.',
+        'Las fichas de producto convierten mejor con imágenes consistentes y sin distracciones, y la mayoría de los marketplaces exigen fondo blanco puro en la imagen principal. FreeBG te lo da en segundos por foto, a resolución completa y para todo un catálogo, sin créditos por imagen.',
       showTool: true,
       sections: [
         {
@@ -346,7 +346,7 @@ export const es: Dictionary = {
             'Google Shopping: sin marcas de agua, bordes ni texto promocional sobre la imagen del producto.',
           ],
           paragraphs: [
-            'Exportar directamente sobre blanco con BGFree produce exactamente el blanco puro que piden esas normas, algo que una foto sobre un fondo blanco real casi nunca consigue por sí sola.',
+            'Exportar directamente sobre blanco con FreeBG produce exactamente el blanco puro que piden esas normas, algo que una foto sobre un fondo blanco real casi nunca consigue por sí sola.',
           ],
         },
         {
@@ -363,7 +363,7 @@ export const es: Dictionary = {
           heading: 'Por qué el procesamiento local importa si vendes',
           paragraphs: [
             'Un catálogo de producto es información comercialmente sensible. Productos sin lanzar, embalaje de proveedores o listas de precios que se cuelan en el encuadre son cosas que quizá no quieras dejar en un servidor ajeno, y muchas herramientas gratuitas se reservan derechos amplios sobre el contenido subido en sus términos.',
-            'Como BGFree nunca transmite tus archivos, no hay nada que filtrar, conservar ni licenciar. Tus fotos se quedan en el equipo donde las editaste.',
+            'Como FreeBG nunca transmite tus archivos, no hay nada que filtrar, conservar ni licenciar. Tus fotos se quedan en el equipo donde las editaste.',
           ],
         },
       ],
@@ -388,7 +388,7 @@ export const es: Dictionary = {
     },
 
     profilePictures: {
-      title: 'Quitar Fondo a Foto de Perfil Gratis y Privado | BGFree',
+      title: 'Quitar Fondo a Foto de Perfil Gratis y Privado | FreeBG',
       description:
         'Quita el fondo de tu foto de perfil para LinkedIn, currículums y páginas de equipo. Gratis, ilimitado, a resolución completa y procesado en tu navegador.',
       h1: 'Quitar el fondo a una foto de perfil',
@@ -420,7 +420,7 @@ export const es: Dictionary = {
           heading: 'Por qué importa dónde se procesa tu cara',
           paragraphs: [
             'Una foto de tu cara es un dato biométrico. Bajo el RGPD es una categoría especial de dato personal cuando se usa para identificarte, y es justo el tipo de archivo que conviene mantener fuera de servidores ajenos por defecto.',
-            'BGFree nunca transmite la imagen. El modelo viaja hasta tu navegador en lugar de que tu cara viaje hasta un servidor, lo que significa que no existe ninguna copia de tu foto que se pueda conservar, vender o filtrar.',
+            'FreeBG nunca transmite la imagen. El modelo viaja hasta tu navegador en lugar de que tu cara viaje hasta un servidor, lo que significa que no existe ninguna copia de tu foto que se pueda conservar, vender o filtrar.',
           ],
         },
       ],
@@ -445,9 +445,9 @@ export const es: Dictionary = {
     },
 
     privacy: {
-      title: 'Política de Privacidad | BGFree',
+      title: 'Política de Privacidad | FreeBG',
       description:
-        'Cómo trata BGFree tus datos: las imágenes se procesan íntegramente en tu navegador y nunca se suben. Política de privacidad completa.',
+        'Cómo trata FreeBG tus datos: las imágenes se procesan íntegramente en tu navegador y nunca se suben. Política de privacidad completa.',
       h1: 'Política de privacidad',
       subtitle:
         'Versión corta: tus imágenes nunca llegan hasta nosotros, porque nunca salen de tu navegador.',
@@ -456,7 +456,7 @@ export const es: Dictionary = {
         {
           heading: 'Tus imágenes',
           paragraphs: [
-            'BGFree realiza todo el borrado de fondo en local, dentro de tu navegador, mediante un modelo de IA que se descarga a tu dispositivo. Las imágenes que abres con la herramienta nunca se transmiten a BGFree ni a ningún tercero.',
+            'FreeBG realiza todo el borrado de fondo en local, dentro de tu navegador, mediante un modelo de IA que se descarga a tu dispositivo. Las imágenes que abres con la herramienta nunca se transmiten a FreeBG ni a ningún tercero.',
             'No recibimos, vemos, almacenamos, registramos, respaldamos ni procesamos tus imágenes de ninguna forma. Al cerrar o recargar la página, la imagen se descarta de la memoria. Puedes comprobarlo tú mismo abriendo las herramientas de desarrollo del navegador e inspeccionando la pestaña Red mientras usas la herramienta.',
           ],
         },
@@ -506,9 +506,9 @@ export const es: Dictionary = {
     },
 
     terms: {
-      title: 'Términos del Servicio | BGFree',
+      title: 'Términos del Servicio | FreeBG',
       description:
-        'Los términos que se aplican al usar BGFree. Gratis, se ofrece tal cual y no adquirimos ningún derecho sobre tus imágenes.',
+        'Los términos que se aplican al usar FreeBG. Gratis, se ofrece tal cual y no adquirimos ningún derecho sobre tus imágenes.',
       h1: 'Términos del servicio',
       subtitle:
         'Términos claros para una herramienta gratuita que se ejecuta en tu propio dispositivo.',
@@ -517,13 +517,13 @@ export const es: Dictionary = {
         {
           heading: 'Aceptación',
           paragraphs: [
-            'Al usar BGFree aceptas estos términos. Si no estás de acuerdo con ellos, por favor no uses el servicio.',
+            'Al usar FreeBG aceptas estos términos. Si no estás de acuerdo con ellos, por favor no uses el servicio.',
           ],
         },
         {
           heading: 'El servicio',
           paragraphs: [
-            'BGFree es una herramienta gratuita basada en navegador que quita el fondo de las imágenes mediante un modelo de IA ejecutado en tu propio dispositivo. No requiere cuenta ni tiene coste.',
+            'FreeBG es una herramienta gratuita basada en navegador que quita el fondo de las imágenes mediante un modelo de IA ejecutado en tu propio dispositivo. No requiere cuenta ni tiene coste.',
             'Como el procesamiento ocurre en local, la calidad, la velocidad y el éxito de cada operación dependen de tu dispositivo, tu navegador y la propia imagen.',
           ],
         },
@@ -558,7 +558,7 @@ export const es: Dictionary = {
         {
           heading: 'Código abierto y licencia',
           paragraphs: [
-            'La aplicación web BGFree es de código abierto y se distribuye bajo la Licencia Pública General Affero de GNU v3.0, tal y como exige la biblioteca de eliminación de fondos sobre la que se construye. El código fuente es público y eres libre de inspeccionarlo, modificarlo y alojarlo por tu cuenta según los términos de esa licencia.',
+            'La aplicación web FreeBG es de código abierto y se distribuye bajo la Licencia Pública General Affero de GNU v3.0, tal y como exige la biblioteca de eliminación de fondos sobre la que se construye. El código fuente es público y eres libre de inspeccionarlo, modificarlo y alojarlo por tu cuenta según los términos de esa licencia.',
           ],
         },
         {
@@ -571,9 +571,9 @@ export const es: Dictionary = {
     },
 
     contact: {
-      title: 'Contacto | BGFree',
+      title: 'Contacto | FreeBG',
       description:
-        'Contacta con el equipo de BGFree. Envía un mensaje con el formulario, sin necesidad de abrir el correo.',
+        'Contacta con el equipo de FreeBG. Envía un mensaje con el formulario, sin necesidad de abrir el correo.',
       h1: 'Contacto',
       subtitle: 'Dudas, comentarios o propuestas — escríbenos un mensaje.',
       showTool: false,

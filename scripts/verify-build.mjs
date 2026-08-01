@@ -21,7 +21,7 @@ async function readPage(path) {
 }
 
 const sitemap = await readFile(join(dist, 'sitemap.xml'), 'utf8')
-const paths = [...sitemap.matchAll(/<loc>https:\/\/bgfree\.app(.*?)<\/loc>/g)].map(
+const paths = [...sitemap.matchAll(/<loc>https:\/\/freebg\.app(.*?)<\/loc>/g)].map(
   (match) => match[1] || '/',
 )
 
@@ -44,7 +44,7 @@ for (const path of paths) {
   const canonicals = [...html.matchAll(/rel="canonical" href="(.*?)"/g)]
   check(canonicals.length === 1, `${path}: expected 1 canonical`)
   check(
-    canonicals[0]?.[1] === `https://bgfree.app${path === '/' ? '/' : path}`,
+    canonicals[0]?.[1] === `https://freebg.app${path === '/' ? '/' : path}`,
     `${path}: canonical mismatch (${canonicals[0]?.[1]})`,
   )
 

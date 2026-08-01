@@ -24,7 +24,7 @@ class Boundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo): void {
-    console.error('BGFree crashed:', error, info.componentStack)
+    console.error('FreeBG crashed:', error, info.componentStack)
   }
 
   render() {

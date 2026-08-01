@@ -1,6 +1,6 @@
-# BGFree.app — Project Specification & Cursor Build Guide
+# FreeBG.app — Project Specification & Cursor Build Guide
 
-**Domain:** bgfree.app  
+**Domain:** freebg.app  
 **Goal:** Free, unlimited, HD/4K background remover that runs 100% client-side (no uploads, no registration, no watermarks). Privacy-first. Optimized for AdSense later.
 
 ---
@@ -56,7 +56,7 @@ text> **Note on license:** `@imgly/background-removal` is AGPL. For a pure free 
 ---
 
 ## 4. Suggested Folder Structure
-bgfree/
+FreeBG/
 ├── public/
 │   ├── favicon.svg
 │   ├── og-image.png
@@ -92,7 +92,7 @@ text---
 Copy and paste these prompts **one by one** into Cursor. Wait for each step to finish before moving to the next.
 
 ### Prompt 1 — Project Initialization
-Create a new Vite + React + TypeScript project for bgfree.app.
+Create a new Vite + React + TypeScript project for freebg.app.
 Requirements:
 
 Use Vite + React 19 + TypeScript
@@ -101,10 +101,10 @@ Install: @imgly/background-removal onnxruntime-web lucide-react
 Set up a clean basic structure with App.tsx, main.tsx and index.css
 Configure vite.config.ts for optimal static build
 Add the necessary COOP/COEP headers comment in vite config (we will set them on the host later)
-Create a simple placeholder App that says "BGFree – Free Background Remover"
+Create a simple placeholder App that says "FreeBG – Free Background Remover"
 
 text### Prompt 2 — Core Layout & Design System
-Create the main layout and design system for bgfree.app.
+Create the main layout and design system for freebg.app.
 Design direction:
 
 Clean, modern, minimal, professional tool aesthetic
@@ -116,7 +116,7 @@ Large, obvious drop zone as the hero
 
 Components to create:
 
-Header (logo "BGFree" + short tagline "Free • Unlimited • Private")
+Header (logo "FreeBG" + short tagline "Free • Unlimited • Private")
 Footer (privacy note + "Runs 100% in your browser")
 Basic responsive container
 
@@ -179,7 +179,7 @@ Footer note reinforcing client-side processing
 
 Tone: confident, transparent, technical enough to be credible but easy to understand.
 text### Prompt 8 — SEO Foundation
-Set up excellent SEO for bgfree.app:
+Set up excellent SEO for freebg.app:
 
 Proper <title> and meta description targeting main keywords
 Open Graph + Twitter cards
@@ -188,7 +188,7 @@ Semantic HTML
 Good heading structure (H1 = main benefit)
 Favicon and basic public assets
 
-Suggested title: "BGFree – Free Unlimited Background Remover (No Watermark, Private)"
+Suggested title: "FreeBG – Free Unlimited Background Remover (No Watermark, Private)"
 Suggested description: focus on free + unlimited + no upload + full HD/4K + privacy.
 text### Prompt 9 — Polish, Loading States & Mobile
 Polish the entire experience:

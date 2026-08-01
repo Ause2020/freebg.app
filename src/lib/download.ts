@@ -22,7 +22,7 @@ export function triggerDownload(blob: Blob, fileName: string): void {
 
 export async function downloadZip(
   entries: { name: string; blob: Blob }[],
-  zipName = 'bgfree-images.zip',
+  zipName = 'freebg-images.zip',
 ): Promise<void> {
   const { default: JSZip } = await import('jszip')
   const zip = new JSZip()

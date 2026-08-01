@@ -29,7 +29,7 @@ export function Header({ route }: { route: RouteDef }) {
           </span>
           <span className="flex flex-col items-start gap-0.5">
             <span className="text-lg leading-none font-black tracking-tight text-ink sm:text-xl dark:text-white">
-              BG<span className="text-primary dark:text-primary-light">Free</span>
+              Free<span className="text-primary dark:text-primary-light">BG</span>
             </span>
             <span className="hidden font-mono text-[0.65rem] font-medium tracking-wide text-ink/50 sm:block dark:text-white/50">
               {t.tagline}

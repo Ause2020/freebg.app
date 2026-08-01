@@ -31,7 +31,7 @@ async function samples() {
 }
 
 async function icons() {
-  const source = join(src, 'bgfree-icon.png')
+  const source = join(src, 'freebg-icon.png')
 
   for (const size of [192, 512]) {
     const info = await sharp(source)
