@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { Route, Routes } from 'react-router-dom'
 import { ROUTES } from './content/routes'
 import { I18nProvider } from './i18n'
@@ -7,27 +8,30 @@ import { DEFAULT_LOCALE } from './content/site'
 
 export function App() {
   return (
-    <Routes>
-      {ROUTES.map((route) => (
+    <>
+      <Routes>
+        {ROUTES.map((route) => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={
+              <I18nProvider locale={route.locale}>
+                <Page route={route} />
+              </I18nProvider>
+            }
+          />
+        ))}
         <Route
-          key={route.path}
-          path={route.path}
+          path="*"
           element={
-            <I18nProvider locale={route.locale}>
-              <Page route={route} />
+            <I18nProvider locale={DEFAULT_LOCALE}>
+              <NotFound />
             </I18nProvider>
           }
         />
-      ))}
-      <Route
-        path="*"
-        element={
-          <I18nProvider locale={DEFAULT_LOCALE}>
-            <NotFound />
-          </I18nProvider>
-        }
-      />
-    </Routes>
+      </Routes>
+      <Analytics />
+    </>
   )
 }
 
