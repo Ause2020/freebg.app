@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { routePath, type PageKey } from '../content/routes'
-import { SITE_NAME, SOURCE_URL } from '../content/site'
+import { SISTER_SITES, SITE_NAME, SOURCE_URL } from '../content/site'
 
 const TOOL_KEYS: PageKey[] = ['home', 'guide', 'productPhotos', 'profilePictures']
 const LEGAL_KEYS: PageKey[] = ['privacy', 'terms', 'contact']
@@ -11,7 +11,7 @@ export function Footer() {
 
   return (
     <footer className="mt-auto w-full border-t-2 border-ink/10 bg-white dark:border-white/10 dark:bg-[#0d0d13]">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
         <div>
           <p className="text-sm font-black text-ink dark:text-white">
             {t.footer.heading}
@@ -32,6 +32,23 @@ export function Footer() {
                 >
                   {t.nav[key]}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav aria-label={t.footer.moreTools}>
+          <h2 className="eyebrow mb-3">{t.footer.moreTools}</h2>
+          <ul className="space-y-2">
+            {SISTER_SITES.map((site) => (
+              <li key={site.id}>
+                <a
+                  href={site.href[locale]}
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-ink/60 transition hover:text-primary dark:text-white/50 dark:hover:text-primary-light"
+                >
+                  {t.footer.sisters[site.id]}
+                </a>
               </li>
             ))}
           </ul>

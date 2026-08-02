@@ -134,10 +134,16 @@ export type Dictionary = {
     body: string
     product: string
     legal: string
+    moreTools: string
     openSource: string
     sourceNote: string
     contact: string
     rights: string
+    sisters: {
+      freepng: string
+      freepdf: string
+      freebg: string
+    }
   }
   faqHeading: string
   pages: Record<PageKey, PageContent>

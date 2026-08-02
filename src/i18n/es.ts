@@ -116,10 +116,16 @@ export const es: Dictionary = {
       'FreeBG quita fondos en local con IA en el dispositivo (WebGPU o WebAssembly). No se sube nada a ningún servidor, así que tus fotos se quedan contigo. Sin cuentas, sin marcas de agua y sin límites diarios.',
     product: 'Herramientas',
     legal: 'Legal',
+    moreTools: 'Más herramientas gratis',
     openSource: 'Código fuente',
     sourceNote: 'Código abierto (AGPL-3.0)',
     contact: 'Contacto',
     rights: 'Todos los derechos reservados.',
+    sisters: {
+      freepng: 'FreePNG – convertir, redimensionar y comprimir imágenes',
+      freepdf: 'FreePDF – unir, separar y comprimir PDF',
+      freebg: 'FreeBG – quitar fondo de imágenes',
+    },
   },
 
   faqHeading: 'Preguntas frecuentes',
@@ -155,6 +161,12 @@ export const es: Dictionary = {
             'Logotipos y recursos en PNG transparente para presentaciones y documentos.',
             'Recortes para carteles, miniaturas, collages y memes.',
             'Eliminar fondos que distraen antes de imprimir una foto.',
+          ],
+        },
+        {
+          heading: 'Más herramientas gratis en el navegador',
+          paragraphs: [
+            'Cuando exportes un PNG transparente, puedes convertirlo, redimensionarlo o comprimirlo con FreePNG (https://freepng.app), o trabajar documentos en FreePDF (https://freepdf.app): misma familia, mismo enfoque privado en tu dispositivo.',
           ],
         },
         {

@@ -116,10 +116,16 @@ export const en: Dictionary = {
       'FreeBG removes backgrounds locally with on-device AI (WebGPU or WebAssembly). Nothing is uploaded to a server, so your photos stay on your device. No accounts, no watermarks, no daily limits.',
     product: 'Tools',
     legal: 'Legal',
+    moreTools: 'More free tools',
     openSource: 'Source code',
     sourceNote: 'Open source (AGPL-3.0)',
     contact: 'Contact',
     rights: 'All rights reserved.',
+    sisters: {
+      freepng: 'FreePNG – convert, resize & compress images',
+      freepdf: 'FreePDF – merge, split & compress PDFs',
+      freebg: 'FreeBG – remove image backgrounds',
+    },
   },
 
   faqHeading: 'Frequently asked questions',
@@ -155,6 +161,12 @@ export const en: Dictionary = {
             'Transparent PNG logos and assets for slide decks and documents.',
             'Cut-outs for posters, thumbnails, collages and memes.',
             'Removing distracting backgrounds from photos before printing.',
+          ],
+        },
+        {
+          heading: 'More free browser tools',
+          paragraphs: [
+            'After you export a transparent PNG, you can convert, resize or compress it with FreePNG (https://freepng.app), or work with documents on FreePDF (https://freepdf.app) — same private, on-device approach.',
           ],
         },
         {

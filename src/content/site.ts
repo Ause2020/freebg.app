@@ -24,3 +24,23 @@ export function absoluteUrl(path: string): string {
   if (path.startsWith('http')) return path
   return `${SITE_URL}${path === '/' ? '/' : path.replace(/\/$/, '')}`
 }
+
+/** Sister products in the same Free* family — footer / SEO cross-links. */
+export type SisterSite = {
+  id: 'freepng' | 'freepdf' | 'freebg'
+  name: string
+  href: Record<Locale, string>
+}
+
+export const SISTER_SITES: readonly SisterSite[] = [
+  {
+    id: 'freepng',
+    name: 'FreePNG',
+    href: { en: 'https://freepng.app/', es: 'https://freepng.app/es' },
+  },
+  {
+    id: 'freepdf',
+    name: 'FreePDF',
+    href: { en: 'https://freepdf.app/', es: 'https://freepdf.app/es' },
+  },
+] as const
