@@ -9,7 +9,18 @@ import { usePasteImage } from '../hooks/usePasteImage'
 import { useI18n } from '../i18n'
 import { formatFileSize } from '../lib/constants'
 
-const SAMPLES = ['/samples/portrait.jpg', '/samples/product.jpg']
+const SAMPLES = [
+  {
+    path: '/samples/portrait.jpg',
+    labelKey: 'samplePortrait' as const,
+    altKey: 'samplePortraitAlt' as const,
+  },
+  {
+    path: '/samples/product.jpg',
+    labelKey: 'sampleProduct' as const,
+    altKey: 'sampleProductAlt' as const,
+  },
+]
 
 export function HeroTool() {
   const { t } = useI18n()
@@ -85,19 +96,34 @@ export function HeroTool() {
       <div className="animate-fade-up flex w-full max-w-2xl flex-col items-center">
         <DropZone onFiles={handleFiles} />
 
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm text-ink/50 dark:text-white/50">
-          <span>{t.tool.orTrySample}</span>
-          {SAMPLES.map((path, index) => (
-            <button
-              key={path}
-              type="button"
-              disabled={loadingSample}
-              onClick={() => void loadSample(path)}
-              className="btn btn-outline btn-sm text-primary dark:text-primary-light"
-            >
-              {t.tool.sample} {index + 1}
-            </button>
-          ))}
+        <div className="mt-4 flex flex-col items-center gap-3">
+          <span className="text-sm text-ink/50 dark:text-white/50">
+            {t.tool.orTrySample}
+          </span>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {SAMPLES.map((sample) => (
+              <button
+                key={sample.path}
+                type="button"
+                disabled={loadingSample}
+                onClick={() => void loadSample(sample.path)}
+                className="group flex flex-col items-center gap-1.5 rounded-xl border-2 border-ink/10 bg-white p-2 text-xs font-bold text-ink transition hover:-translate-y-0.5 hover:border-primary dark:border-white/15 dark:bg-[#14141c] dark:text-white dark:hover:border-primary-light"
+                aria-label={t.tool[sample.labelKey]}
+              >
+                <img
+                  src={sample.path}
+                  alt={t.tool[sample.altKey]}
+                  width={72}
+                  height={72}
+                  loading="lazy"
+                  className="h-[72px] w-[72px] rounded-lg object-cover"
+                />
+                <span className="text-primary dark:text-primary-light">
+                  {t.tool[sample.labelKey]}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     )

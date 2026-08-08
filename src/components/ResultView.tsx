@@ -133,12 +133,12 @@ export function ResultView({
           onClick={() =>
             triggerDownload(exportedRef.current, outputName(fileName, format))
           }
-          className="btn btn-primary"
+          className="btn btn-accent min-w-[12rem] px-6 py-3 text-base"
         >
           {busy ? (
-            <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+            <Loader2 className="h-5 w-5 animate-spin" aria-hidden="true" />
           ) : (
-            <Download className="h-4 w-4" aria-hidden="true" />
+            <Download className="h-5 w-5" aria-hidden="true" />
           )}
           {t.tool.download}
         </button>

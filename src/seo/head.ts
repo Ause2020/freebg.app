@@ -41,6 +41,7 @@ function softwareApplicationSchema(locale: Locale): Record<string, unknown> {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: SITE_NAME,
+    alternateName: ['freebg.app', 'FreeBG', 'Free Background Remover'],
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Any modern web browser',
     url: absoluteUrl(routePath('home', locale)),
@@ -51,17 +52,10 @@ function softwareApplicationSchema(locale: Locale): Record<string, unknown> {
       price: '0',
       priceCurrency: 'USD',
     },
-    featureList: [
-      'On-device background removal',
-      'No watermark',
-      'Unlimited usage',
-      'Full resolution HD and 4K output',
-      'No image uploads',
-      'Batch processing with ZIP download',
-      'Works offline',
-    ],
+    featureList: t.featureList,
     softwareLicense: 'https://www.gnu.org/licenses/agpl-3.0.html',
     codeRepository: SOURCE_URL,
+    inLanguage: LOCALE_TAGS[locale],
   }
 }
 
@@ -157,6 +151,7 @@ export function buildHead(route: RouteDef): HeadData {
     { property: 'og:image', content: OG_IMAGE },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
+    { property: 'og:image:alt', content: t.ogImageAlt },
     { property: 'og:locale', content: OG_LOCALES[route.locale] },
 
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -164,6 +159,7 @@ export function buildHead(route: RouteDef): HeadData {
     { name: 'twitter:title', content: page.title },
     { name: 'twitter:description', content: page.description },
     { name: 'twitter:image', content: OG_IMAGE },
+    { name: 'twitter:image:alt', content: t.ogImageAlt },
   ]
 
   for (const other of ROUTES) {

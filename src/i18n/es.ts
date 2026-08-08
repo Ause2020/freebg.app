@@ -15,6 +15,23 @@ export const es: Dictionary = {
   },
   tagline: 'Gratis • Ilimitado • Privado',
   badge: '100% privado: tus imágenes nunca salen de tu dispositivo',
+  trustBadges: [
+    '100% privado: tus imágenes nunca salen de tu dispositivo',
+    'Uso gratis e ilimitado',
+    'Sin marca de agua',
+    'Listo para HD y 4K',
+  ],
+  featureList: [
+    'Quitar fondo en el dispositivo – sin subir archivos',
+    'Quitar fondo gratis sin registro ni marca de agua',
+    'Uso gratis e ilimitado',
+    'Salida a resolución completa HD y 4K',
+    'Remover fondo privado en tu navegador',
+    'Procesamiento por lotes con descarga ZIP',
+    'Funciona sin conexión tras la primera carga',
+  ],
+  ogImageAlt:
+    'freebg.app quitar fondo gratis HD – ilimitado, sin marca de agua, privado en el navegador',
 
   contactForm: {
     name: 'Nombre',
@@ -35,6 +52,12 @@ export const es: Dictionary = {
     pasteHint: 'También puedes pegar una imagen con Ctrl + V',
     orTrySample: '¿No tienes una imagen a mano?',
     sample: 'Prueba con un ejemplo',
+    samplePortrait: 'Ejemplo de retrato',
+    samplePortraitAlt:
+      'Foto de ejemplo de retrato para probar quitar fondo gratis sin registro',
+    sampleProduct: 'Ejemplo de producto',
+    sampleProductAlt:
+      'Foto de ejemplo de producto para remover fondo de imagen online gratis',
     remove: 'Quitar fondo',
     tryAgain: 'Reintentar',
     chooseAnother: 'Elegir otra',
@@ -57,7 +80,7 @@ export const es: Dictionary = {
     before: 'Antes',
     after: 'Después',
     dragToCompare: 'Arrastra el control para comparar el antes y el después',
-    fullResolution: 'Resolución completa · Sin marca de agua',
+    fullResolution: 'Resolución completa – sin pérdida de calidad',
     background: 'Fondo',
     transparent: 'Transparente',
     white: 'Blanco',
@@ -121,6 +144,7 @@ export const es: Dictionary = {
     sourceNote: 'Código abierto (AGPL-3.0)',
     contact: 'Contacto',
     rights: 'Todos los derechos reservados.',
+    comingSoon: 'Próximamente',
     sisters: {
       freepng: 'FreePNG – convertir, redimensionar y comprimir imágenes',
       freepdf: 'FreePDF – unir, separar y comprimir PDF',
@@ -132,107 +156,190 @@ export const es: Dictionary = {
 
   pages: {
     home: {
-      title: 'Quitar Fondo a una Imagen Gratis – Sin Marca de Agua | FreeBG',
+      title:
+        'Quitar Fondo Gratis – Ilimitado, Sin Marca de Agua, Privado (HD/4K) | freebg.app',
       description:
-        'Quita el fondo de tus imágenes gratis y sin límites. Sin marca de agua, sin registro y sin subir archivos. Resolución completa HD/4K, todo en tu navegador.',
-      h1: 'Quita el fondo de tus imágenes. Gratis, ilimitado y privado.',
-      subtitle: 'Resolución completa • Todo en tu navegador • Sin registro',
+        'Quita el fondo de imágenes gratis para siempre. Sin registro, sin límites ni marca de agua. 100% en tu navegador: tus fotos no salen del dispositivo. HD y 4K.',
+      h1: 'Quitar Fondo Gratis – Ilimitado y Privado',
+      subtitle: 'Sin subir archivos. Sin marca de agua. Sin registro. Resolución completa.',
+      intro:
+        'freebg.app te permite quitar fondo gratis sin registro y sin marca de agua. Remover fondo de imagen online gratis, ilimitado y en HD/4K, con un quitar fondo privado que nunca sube tus fotos. Si buscas quitar el fondo sin subir la imagen — o un quitar fondo HD gratis que conserve la calidad — suelta una foto arriba y descarga un PNG transparente en segundos.',
       showTool: true,
       sections: [
         {
-          heading: 'Por qué FreeBG es diferente',
+          heading: 'Cómo funciona',
           paragraphs: [
-            'La mayoría de las webs para quitar fondos suben tu foto a un servidor, te limitan a unas pocas imágenes gratis y luego te devuelven una vista previa en baja resolución con marca de agua si no pagas. FreeBG no hace nada de eso.',
-            'El modelo de IA se ejecuta dentro de la pestaña de tu navegador. Tu imagen se lee desde el disco a la memoria, se procesa con tu propia CPU o GPU y se guarda como un PNG transparente. Ningún servidor ve el archivo, y por eso la herramienta puede ser realmente gratis e ilimitada.',
+            'A diferencia de los editores en la nube, freebg.app está pensado para quitar el fondo sin subir archivos. Cuando sueltas una foto, tu navegador descarga un modelo compacto de segmentación (una sola vez) y lo ejecuta en local con WebGPU o WebAssembly. Los píxeles se quedan en la memoria de la pestaña todo el tiempo: decodificar → segmentar → exportar. Nada se envía a los servidores de freebg.app para analizarlo.',
+            'Ese pipeline 100% client-side es la razón por la que puedes remover fondo de imagen online gratis e ilimitado. No hay factura de API por imagen, así que no hay cuota diaria ni vista previa bloqueada. Los indicadores de progreso muestran cuándo se descarga el modelo y cuándo se procesa tu imagen.',
+            'Al terminar verás una comparación antes/después y un botón de descarga bien visible. La exportación mantiene la resolución completa – sin pérdida de calidad – tanto con una foto de móvil como con un producto en 4K.',
+          ],
+        },
+        {
+          heading: 'Por qué freebg.app es diferente',
+          paragraphs: [
+            'Herramientas populares como remove.bg o Photoroom están muy cuidadas, pero sus planes gratis suelen subir tu archivo, poner marca de agua o bajar la resolución HD hasta que pagas créditos. freebg.app es una alternativa para quitar fondo gratis sin registro: uso ilimitado, resolución original y privacidad por arquitectura.',
+            'Como la inferencia ocurre en tu dispositivo, freebg.app puede ser un quitar fondo privado sin cuentas ni tarjetas. Pegas desde el portapapeles, procesas un lote, retocas bordes con el borrador mágico y descargas un PNG limpio.',
           ],
           bullets: [
-            'Imágenes ilimitadas: no hay cuota que controlar porque no hay factura de servidor que pagar.',
-            'Resolución original completa, incluido 4K. Nada de vistas previas reducidas.',
-            'Nunca añadimos marca de agua.',
-            'Sin cuenta, sin correo y sin tarjeta.',
-            'Funciona sin conexión una vez descargado el modelo.',
+            'Uso gratis e ilimitado — quitar fondo sin cupos diarios.',
+            'Sin marca de agua en vistas previas ni descargas.',
+            'Sin subir archivos: tus fotos nunca salen de tu dispositivo.',
+            'Listo para HD y 4K en las dimensiones originales.',
+            'Funciona sin conexión cuando el modelo ya está en caché.',
           ],
         },
         {
-          heading: 'Para qué te sirve',
+          heading: 'Privacidad primero: tus imágenes nunca salen del navegador',
+          paragraphs: [
+            'La privacidad no es un eslogan; es la restricción del producto. Un quitar fondo privado no debería obligarte a confiar fotos de clientes, niños, productos sin lanzar o retratos sensibles a una granja de GPUs de terceros. Con freebg.app, el modelo viene a ti. Cierras la pestaña y los búferes de imagen desaparecen.',
+            'Puedes comprobarlo tú mismo: abre DevTools → Red mientras procesas y verifica que ninguna petición lleva tu foto. Tras la primera descarga del modelo puedes ir sin conexión y seguir trabajando. Esa es la diferencia entre “prometemos no mirar” y “físicamente no podemos ver el archivo”.',
+          ],
+        },
+        {
+          heading: 'Ideal para',
+          paragraphs: [
+            'Tanto si necesitas recortes listos para marketplace como un recorte rápido para redes, freebg.app es un quitar fondo HD gratis pensado para flujos reales.',
+          ],
+          subsections: [
+            {
+              heading: 'Fotos de producto para ecommerce',
+              paragraphs: [
+                'Exporta fondos blancos o transparentes para Amazon, Shopify, eBay y Etsy. Procesa catálogos enteros sin gastar créditos por SKU.',
+              ],
+            },
+            {
+              heading: 'Redes sociales y creadores',
+              paragraphs: [
+                'Miniaturas, stickers, portadas de YouTube y stories en segundos. Conserva la resolución completa para que los recortes se vean nítidos.',
+              ],
+            },
+            {
+              heading: 'Diseñadores y marketing',
+              paragraphs: [
+                'Coloca sujetos en presentaciones, anuncios y mockups como PNG transparentes. Sin marca de agua que borrar antes de un cliente.',
+              ],
+            },
+            {
+              heading: 'Fotos de perfil y retratos',
+              paragraphs: [
+                'Sustituye habitaciones desordenadas por blanco, gris suave o color de marca para LinkedIn, CVs y páginas de equipo — sin subir tu cara a un editor en la nube.',
+              ],
+            },
+          ],
+        },
+        {
+          heading: 'Formatos admitidos y calidad',
+          paragraphs: [
+            'Entrada: JPG, PNG y WEBP hasta 25 MB. Salida: PNG transparente por defecto (alfa real), o JPG/WEBP si eliges un fondo sólido. El flujo de quitar fondo HD gratis conserva el ancho y alto originales, incluido 4K y resoluciones mayores limitadas solo por la memoria del dispositivo.',
+            'Los bordes los genera un modelo de segmentación de la familia IS-Net — muy sólido con personas, productos, animales y vehículos. Pelo ultrafino, cristal y desenfoque fuerte siguen siendo difíciles para cualquier herramienta automática; un relleno sólido o el pincel de retoque suelen resolver lo que importa para publicar.',
+            'Después de exportar, continúa con FreePNG (https://freepng.app) para convertir, redimensionar o comprimir, o FreePDF (https://freepdf.app) para documentos — misma familia de herramientas privadas en el dispositivo.',
+          ],
           bullets: [
-            'Fotos de producto para tiendas online que necesitan fondo blanco.',
-            'Fotos de perfil para LinkedIn, currículums y páginas de equipo.',
-            'Logotipos y recursos en PNG transparente para presentaciones y documentos.',
-            'Recortes para carteles, miniaturas, collages y memes.',
-            'Eliminar fondos que distraen antes de imprimir una foto.',
-          ],
-        },
-        {
-          heading: 'Más herramientas gratis en el navegador',
-          paragraphs: [
-            'Cuando exportes un PNG transparente, puedes convertirlo, redimensionarlo o comprimirlo con FreePNG (https://freepng.app), o trabajar documentos en FreePDF (https://freepdf.app): misma familia, mismo enfoque privado en tu dispositivo.',
-          ],
-        },
-        {
-          heading: 'Calidad y límites, con honestidad',
-          paragraphs: [
-            'FreeBG usa el modelo de segmentación IS-Net, de la misma familia que utilizan muchas herramientas de pago. Funciona muy bien con personas, productos, animales y vehículos, y se defiende bien con detalles finos como el pelo.',
-            'Los mechones muy finos sobre un fondo recargado, el cristal transparente y el desenfoque de movimiento siguen siendo difíciles para cualquier herramienta automática. Si un borde no queda perfecto, cambiar el fondo a blanco o a un color sólido suele disimular la diferencia por completo.',
-            'La primera vez se descargan unos 40 MB de modelo y motor. Esa descarga queda en la caché del navegador, así que a partir de la segunda imagen todo es inmediato.',
+            'El PNG transparente mantiene alfa real para composición.',
+            'Resolución completa – sin pérdida de calidad ni reducción forzada.',
+            'Cola por lotes con descarga ZIP para catálogos.',
+            'La primera vez descarga ~40 MB de modelo; luego queda en caché.',
           ],
         },
       ],
       howTo: {
-        name: 'Cómo quitar el fondo con FreeBG',
+        name: 'Cómo quitar el fondo con freebg.app',
         steps: [
           {
             name: 'Añade tu imagen',
-            text: 'Arrastra un JPG, PNG o WEBP a la zona de carga, haz clic para buscarlo o pégalo desde el portapapeles con Ctrl + V.',
+            text: 'Arrastra un JPG, PNG o WEBP a la zona de carga, haz clic para buscarlo o pégalo con Ctrl + V. No se sube nada.',
           },
           {
             name: 'Ejecuta la IA',
-            text: 'Pulsa «Quitar fondo». El modelo se ejecuta en local en tu navegador y muestra el progreso en tiempo real.',
+            text: 'Pulsa «Quitar fondo». Observa el indicador de progreso mientras se carga el modelo (la primera vez) y mientras se procesa tu imagen en local.',
           },
           {
-            name: 'Elige el fondo',
-            text: 'Déjalo transparente o cámbialo a blanco o a cualquier color personalizado desde las opciones de fondo.',
+            name: 'Compara antes y después',
+            text: 'Usa el control deslizante para revisar bordes, retoca si hace falta con el borrador mágico y elige transparente, blanco o un color personalizado.',
           },
           {
-            name: 'Descarga',
-            text: 'Guarda el resultado en la resolución original completa como PNG, JPG o WEBP. Sin marca de agua.',
+            name: 'Descarga a resolución completa',
+            text: 'Guarda como PNG, JPG o WEBP con resolución completa – sin pérdida de calidad y sin marca de agua.',
           },
         ],
       },
       faq: [
         {
-          q: '¿De verdad es gratis y sin límites?',
-          a: 'Sí. El procesamiento ocurre en tu propio dispositivo, así que atenderte mil imágenes no nos cuesta nada. No hay cuotas, ni prueba limitada, ni un plan de pago que mejore la calidad del resultado.',
+          q: '¿Puedo quitar fondo gratis sin límites de verdad?',
+          a: 'Sí. El procesamiento corre en tu dispositivo, así que no hay cuota en servidor. Puedes remover fondo de imagen online gratis e ilimitado: sin reloj de prueba, sin packs de créditos ni plan de pago que limite la resolución.',
         },
         {
-          q: '¿Añadís marca de agua?',
-          a: 'No. El archivo que descargas es una imagen limpia a resolución completa, sin marca de agua, sello ni metadatos añadidos por nosotros.',
+          q: '¿Es quitar fondo gratis sin registro y sin marca de agua?',
+          a: 'Sí. Las descargas son archivos limpios a resolución completa, sin marca de agua, sello ni overlay promocional. Tampoco pedimos cuenta ni correo.',
         },
         {
-          q: '¿Se suben mis imágenes a un servidor?',
-          a: 'No. El modelo de IA se descarga a tu navegador y la imagen se procesa allí. Puedes comprobarlo abriendo las herramientas de desarrollo del navegador, yendo a la pestaña Red y verificando que ninguna petición contiene tu imagen. De hecho puedes desconectarte de internet tras cargar el modelo y la herramienta seguirá funcionando.',
+          q: '¿Se suben mis imágenes? ¿Es un quitar fondo privado?',
+          a: 'No se suben. El modelo se descarga a tu navegador y la imagen se procesa allí. Es quitar fondo sin subir archivos: puedes comprobarlo en la pestaña Red y, tras cargar el modelo, trabajar sin conexión.',
         },
         {
-          q: '¿En qué resolución obtengo el resultado?',
-          a: 'En la misma que subiste, incluido 4K o superior. Las imágenes muy grandes solo están limitadas por la memoria disponible en tu dispositivo.',
+          q: '¿Obtengo resultado HD y 4K?',
+          a: 'Sí. La salida coincide con las dimensiones de entrada, incluido HD y 4K. Las imágenes muy grandes solo están limitadas por la memoria del dispositivo. Resolución completa – sin pérdida de calidad.',
         },
         {
           q: '¿Qué formatos admite?',
-          a: 'Admite JPG, PNG y WEBP como entrada. Puedes descargar el resultado como PNG transparente, o como JPG o WEBP si eliges un color de fondo sólido. Las fotos HEIC del iPhone hay que convertirlas antes a JPG, porque los navegadores no pueden decodificar HEIC de forma nativa.',
+          a: 'JPG, PNG y WEBP como entrada. Descarga PNG transparente, o JPG/WEBP si eliges un color de fondo sólido. Convierte HEIC del iPhone a JPG primero: los navegadores no decodifican HEIC de forma nativa.',
         },
         {
-          q: '¿Funciona en el móvil?',
-          a: 'Sí. La interfaz está pensada para pantallas táctiles y la IA funciona en navegadores modernos de iOS y Android. El procesamiento es más lento que en un ordenador y las imágenes muy grandes pueden fallar en móviles antiguos con poca memoria.',
+          q: '¿Necesito registrarme?',
+          a: 'No. Sin registro, sin muro de email y sin tarjeta. Abres la página, sueltas una imagen y descargas el resultado.',
         },
         {
-          q: '¿Funciona sin conexión?',
-          a: 'Sí, después del primer uso. El modelo y la aplicación quedan en caché, así que puedes quitar fondos en un avión o sin cobertura.',
+          q: '¿Funciona en el móvil y sin conexión?',
+          a: 'Sí en navegadores modernos de iOS y Android (más lento que en ordenador). Tras el primer uso el modelo queda en caché y puedes trabajar sin cobertura.',
         },
         {
-          q: '¿Cómo se compara con remove.bg?',
-          a: 'remove.bg da resultados excelentes, pero sube tu imagen, limita las descargas gratuitas a baja resolución y cobra créditos por el tamaño completo. FreeBG cambia una descarga inicial del modelo por procesamiento ilimitado, privado y a resolución completa sin coste.',
+          q: '¿Cómo se compara con remove.bg o Photoroom?',
+          a: 'Son excelentes herramientas en la nube, pero los planes gratis suelen subir la imagen, poner marca de agua o limitar la resolución. freebg.app cambia una descarga única de ~40 MB del modelo por procesamiento ilimitado, privado y a resolución completa sin coste — una alternativa fuerte para quitar fondo gratis sin registro cuando importan la privacidad y el volumen.',
         },
       ],
+      growth: {
+        heading: 'Guías y próximos artículos',
+        intro:
+          'Vamos a ampliar la cobertura temática con guías listas para AdSense. Empieza por las páginas de abajo o vuelve pronto para comparativas y flujos sin subida.',
+        links: [
+          {
+            title: 'Cómo quitar el fondo de una imagen',
+            description:
+              'Guía paso a paso para quitar el fondo sin subir la foto y a resolución completa.',
+            pageKey: 'guide',
+          },
+          {
+            title: 'Quitar fondo a fotos de producto',
+            description:
+              'Fondos blancos o transparentes para catálogos ecommerce — gratis e ilimitado.',
+            pageKey: 'productPhotos',
+          },
+          {
+            title: 'Quitar fondo a foto de perfil',
+            description:
+              'Retratos limpios para LinkedIn y CVs con un quitar fondo privado.',
+            pageKey: 'profilePictures',
+          },
+          {
+            title: 'Mejores alternativas gratis a remove.bg',
+            description:
+              'Comparativa de opciones para quitar fondo gratis sin marca de agua en HD.',
+            comingSoon: true,
+          },
+          {
+            title: 'Cómo quitar el fondo sin subir la imagen',
+            description:
+              'Por qué la IA en el dispositivo gana a la nube con fotos sensibles o de clientes.',
+            comingSoon: true,
+          },
+          {
+            title: 'Free background remover (English)',
+            description:
+              'Unlimited, private, no watermark HD background remover — English homepage.',
+            href: '/',
+          },
+        ],
+      },
     },
 
     guide: {

@@ -15,6 +15,23 @@ export const en: Dictionary = {
   },
   tagline: 'Free • Unlimited • Private',
   badge: '100% Private – Images never leave your device',
+  trustBadges: [
+    '100% Private – Images never leave your device',
+    'Unlimited free use',
+    'No watermark',
+    'HD & 4K ready',
+  ],
+  featureList: [
+    'On-device background removal – no upload',
+    'Free background remover no watermark',
+    'Unlimited free use',
+    'Full resolution HD and 4K output',
+    'Private background remover in your browser',
+    'Batch processing with ZIP download',
+    'Works offline after first load',
+  ],
+  ogImageAlt:
+    'freebg.app free HD background remover – unlimited, no watermark, private in-browser tool',
 
   contactForm: {
     name: 'Name',
@@ -35,6 +52,12 @@ export const en: Dictionary = {
     pasteHint: 'You can also paste an image with Ctrl + V',
     orTrySample: 'No image handy?',
     sample: 'Try a sample',
+    samplePortrait: 'Portrait sample',
+    samplePortraitAlt:
+      'Sample portrait photo for testing the free background remover no watermark',
+    sampleProduct: 'Product sample',
+    sampleProductAlt:
+      'Sample product photo for testing the private background remover online',
     remove: 'Remove Background',
     tryAgain: 'Try again',
     chooseAnother: 'Choose another',
@@ -57,7 +80,7 @@ export const en: Dictionary = {
     before: 'Before',
     after: 'After',
     dragToCompare: 'Drag the slider to compare before and after',
-    fullResolution: 'Full resolution · No watermark',
+    fullResolution: 'Full resolution – no quality loss',
     background: 'Background',
     transparent: 'Transparent',
     white: 'White',
@@ -121,6 +144,7 @@ export const en: Dictionary = {
     sourceNote: 'Open source (AGPL-3.0)',
     contact: 'Contact',
     rights: 'All rights reserved.',
+    comingSoon: 'Coming soon',
     sisters: {
       freepng: 'FreePNG – convert, resize & compress images',
       freepdf: 'FreePDF – merge, split & compress PDFs',
@@ -132,107 +156,190 @@ export const en: Dictionary = {
 
   pages: {
     home: {
-      title: 'Free Background Remover – No Watermark, Unlimited | FreeBG',
+      title:
+        'Free Background Remover – Unlimited, No Watermark, Private (HD/4K) | freebg.app',
       description:
-        'Remove image backgrounds free and unlimited. No watermark, no signup, no uploads. Full HD/4K resolution, processed privately in your browser.',
-      h1: 'Remove Backgrounds Free. Unlimited. Private.',
-      subtitle: 'Full resolution • Runs in your browser • No signup required',
+        'Remove image backgrounds free forever. No signup, no limits, no watermark. Runs 100% in your browser – photos never leave your device. Full HD & 4K support.',
+      h1: 'Free Background Remover – Unlimited & Private',
+      subtitle: 'No upload. No watermark. No registration. Full resolution.',
+      intro:
+        'freebg.app is a free background remover no watermark and no signup required. Remove background unlimited free, in full HD or 4K, with a private background remover that never uploads your photos. If you need a background remover no upload — or simply a free HD background remover that keeps quality intact — drop an image above and download a transparent PNG in seconds.',
       showTool: true,
       sections: [
         {
-          heading: 'Why FreeBG is different',
+          heading: 'How it works',
           paragraphs: [
-            'Most background removers upload your photo to a server, cap you at a handful of free images, then hand back a low-resolution preview with a watermark unless you pay. FreeBG does none of that.',
-            'The AI model runs inside your browser tab. Your image is read from disk into memory, processed on your own CPU or GPU, and written back out as a transparent PNG. No server ever sees the file, which is why the tool can be genuinely unlimited and free.',
+            'Unlike cloud editors, freebg.app is a background remover no upload by design. When you drop a photo, your browser loads a compact AI segmentation model (once) and runs it locally with WebGPU or WebAssembly. The pixels stay in your tab’s memory the whole time: decode → segment → export. Nothing is posted to freebg.app servers for analysis.',
+            'That client-side pipeline is why you can remove background unlimited free. There is no per-image API bill on our side, so there is no fair-use quota, daily cap, or “preview only” trap. Progress indicators show when the model is downloading and when your image is being processed, so you always know what the tool is doing.',
+            'After processing you get a before/after comparison and a prominent download button. Export keeps full resolution – no quality loss – whether you came in with a phone snapshot or a 4K product shot.',
+          ],
+        },
+        {
+          heading: 'Why freebg.app is different',
+          paragraphs: [
+            'Popular tools such as remove.bg and Photoroom are polished, but their free tiers usually upload your file, watermark the result, or downscale HD output until you buy credits. freebg.app is built as a free background remover no watermark alternative: unlimited free use, original resolution, and privacy by architecture — not by a checkbox in the settings.',
+            'Because inference happens on-device, freebg.app can stay a private background remover without accounts, credit cards, or email gates. You get a free HD background remover experience that matches how people actually work: paste from the clipboard, batch a folder, refine edges with the magic eraser, then download a clean PNG.',
           ],
           bullets: [
-            'Unlimited images — there is no quota to enforce, because there is no server bill to pay.',
-            'Full original resolution, including 4K. No downscaled previews.',
-            'No watermark, ever.',
-            'No account, no email, no credit card.',
-            'Works offline once the model is cached.',
+            'Unlimited free use — remove background unlimited free with no daily quota.',
+            'No watermark on previews or downloads, ever.',
+            'Background remover no upload — your photos never leave your device.',
+            'Full HD & 4K ready at the original pixel dimensions.',
+            'Works offline after the model is cached in your browser.',
           ],
         },
         {
-          heading: 'What you can use it for',
+          heading: 'Privacy first: your images never leave your browser',
+          paragraphs: [
+            'Privacy is not a slogan here; it is the product constraint. A private background remover should not require trusting a third-party GPU farm with client work, kids’ photos, unreleased products, or ID-adjacent headshots. With freebg.app, the model comes to you. Close the tab and the image buffers are gone.',
+            'You can verify the background remover no upload claim yourself: open DevTools → Network while you process an image and confirm that no request body contains your photo. After the first model download you can even go offline and keep working. That is the difference between “we promise not to look” and “we physically cannot see the file.”',
+          ],
+        },
+        {
+          heading: 'Perfect for',
+          paragraphs: [
+            'Whether you need marketplace-ready cut-outs or a quick social crop, freebg.app is a free HD background remover aimed at real workflows — not just demos.',
+          ],
+          subsections: [
+            {
+              heading: 'E-commerce product photos',
+              paragraphs: [
+                'Export pure white or transparent backgrounds for Amazon, Shopify, eBay and Etsy listings. Batch-process catalogues without burning credits on every SKU.',
+              ],
+            },
+            {
+              heading: 'Social media & creators',
+              paragraphs: [
+                'Clean thumbnails, stickers, YouTube art and story assets in seconds. Keep full resolution so crops still look sharp on retina screens.',
+              ],
+            },
+            {
+              heading: 'Designers & marketers',
+              paragraphs: [
+                'Drop subjects onto decks, ads and mockups as transparent PNGs. No watermark to scrub out before a client review.',
+              ],
+            },
+            {
+              heading: 'Profile pictures & headshots',
+              paragraphs: [
+                'Replace messy rooms with white, soft grey or brand colour for LinkedIn, CVs and team pages — without uploading your face to a cloud editor.',
+              ],
+            },
+          ],
+        },
+        {
+          heading: 'Supported formats and quality',
+          paragraphs: [
+            'Input: JPG, PNG and WEBP up to 25 MB. Output: transparent PNG by default (true alpha), or JPG/WEBP when you choose a solid background. The free HD background remover path preserves the original width and height, including 4K and larger frames limited only by device memory.',
+            'Edges are produced by an IS-Net-class segmentation model — strong on people, products, animals and vehicles. Ultra-fine hair, glass and heavy blur remain hard for every automatic tool; switching to a solid fill or using the on-page refine brush usually solves what matters for publishing.',
+            'After you export, continue with FreePNG (https://freepng.app) to convert, resize or compress, or FreePDF (https://freepdf.app) for documents — same private, on-device family of tools.',
+          ],
           bullets: [
-            'E-commerce product shots that need a clean white background.',
-            'Profile pictures and headshots for LinkedIn, CVs and team pages.',
-            'Transparent PNG logos and assets for slide decks and documents.',
-            'Cut-outs for posters, thumbnails, collages and memes.',
-            'Removing distracting backgrounds from photos before printing.',
-          ],
-        },
-        {
-          heading: 'More free browser tools',
-          paragraphs: [
-            'After you export a transparent PNG, you can convert, resize or compress it with FreePNG (https://freepng.app), or work with documents on FreePDF (https://freepdf.app) — same private, on-device approach.',
-          ],
-        },
-        {
-          heading: 'Quality and limits — honestly',
-          paragraphs: [
-            'FreeBG uses the IS-Net segmentation model, the same family of models behind many paid tools. It handles people, products, animals and vehicles very well, and copes with moderately fine detail such as hair.',
-            'Very fine strands against a busy background, transparent glass and motion blur remain hard for any automatic tool. If an edge is not perfect, switching the background to white or a solid colour usually hides the difference completely.',
-            'The first run downloads roughly 40 MB of model and runtime files. That download is cached by your browser, so every image after the first starts instantly.',
+            'Transparent PNG keeps real alpha for compositing.',
+            'Full resolution – no quality loss and no forced downscale.',
+            'Batch queue with ZIP download for catalogue work.',
+            'First run downloads ~40 MB of model assets, then caches them.',
           ],
         },
       ],
       howTo: {
-        name: 'How to remove a background with FreeBG',
+        name: 'How to remove a background with freebg.app',
         steps: [
           {
             name: 'Add your image',
-            text: 'Drag a JPG, PNG or WEBP onto the drop zone, click to browse, or paste from your clipboard with Ctrl + V.',
+            text: 'Drag a JPG, PNG or WEBP onto the drop zone, click to browse, or paste from your clipboard with Ctrl + V. Nothing is uploaded.',
           },
           {
             name: 'Run the AI',
-            text: 'Press "Remove Background". The model runs locally in your browser and shows live progress.',
+            text: 'Press "Remove Background". Watch the progress indicator while the model loads (first time) and while your image is processed locally.',
           },
           {
-            name: 'Choose a background',
-            text: 'Keep it transparent, or swap in white or any custom colour using the background options.',
+            name: 'Compare before and after',
+            text: 'Use the slider to inspect edges, optionally refine with the magic eraser, then pick transparent, white or a custom colour.',
           },
           {
-            name: 'Download',
-            text: 'Save the result at full original resolution as a PNG, JPG or WEBP. No watermark is added.',
+            name: 'Download at full resolution',
+            text: 'Save as PNG, JPG or WEBP with full resolution – no quality loss and no watermark.',
           },
         ],
       },
       faq: [
         {
-          q: 'Is FreeBG really free with no limits?',
-          a: 'Yes. Processing runs on your own device, so serving you a thousand images costs us nothing. There is no quota, no trial and no paid tier gating the output quality.',
+          q: 'Is freebg.app really a remove background unlimited free tool?',
+          a: 'Yes. Processing runs on your device, so there is no server-side quota. You can remove background unlimited free — no trial clock, no credit packs and no paid tier gating resolution.',
         },
         {
-          q: 'Do you add a watermark?',
-          a: 'No. The downloaded file is a clean, full-resolution image with no watermark, badge or metadata added by us.',
+          q: 'Is this a free background remover no watermark?',
+          a: 'Yes. Downloads are clean full-resolution files with no watermark, badge or promotional overlay added by us.',
         },
         {
-          q: 'Are my images uploaded to a server?',
-          a: 'No. The AI model is downloaded to your browser and the image is processed there. You can verify this by opening your browser developer tools, switching to the Network tab, and confirming that no request contains your image. You can even disconnect from the internet after the model has loaded and the tool will keep working.',
+          q: 'Is freebg.app a private background remover / background remover no upload?',
+          a: 'Yes. The AI model downloads to your browser and your image is processed there. It is a background remover no upload: you can confirm in the Network tab that the photo is never sent, and you can disconnect after the model loads and keep working.',
         },
         {
-          q: 'What resolution do I get back?',
-          a: 'The same resolution you put in, including 4K and larger. Very large images are limited only by how much memory your device has available.',
+          q: 'Do I get a free HD background remover result, including 4K?',
+          a: 'Yes. Output matches your input dimensions, including HD and 4K. Very large images are limited only by available memory on your device. Full resolution – no quality loss.',
         },
         {
           q: 'Which formats are supported?',
-          a: 'JPG, PNG and WEBP are supported for input. You can download the result as a transparent PNG, or as JPG or WEBP when you pick a solid background colour. HEIC photos from iPhones need to be converted to JPG first, because browsers cannot decode HEIC natively.',
+          a: 'JPG, PNG and WEBP for input. Download a transparent PNG, or JPG/WEBP when you pick a solid background. Convert HEIC from iPhones to JPG first — browsers cannot decode HEIC natively.',
         },
         {
-          q: 'Does it work on a phone?',
-          a: 'Yes. The interface is designed for touch, and the AI runs on modern iOS and Android browsers. Processing is slower than on a desktop and very large images may fail on older phones with little memory.',
+          q: 'Do I need to register or create an account?',
+          a: 'No. There is no signup, email wall or credit card. Open the page, drop an image, download the result.',
         },
         {
-          q: 'Does it work offline?',
-          a: 'Yes, after the first use. The model and app are cached, so you can remove backgrounds on a plane or with no signal.',
+          q: 'Does it work on a phone and offline?',
+          a: 'Yes on modern iOS and Android browsers (slower than desktop). After the first use the model is cached, so you can work offline on a plane or without signal.',
         },
         {
-          q: 'How does this compare with remove.bg?',
-          a: 'remove.bg produces excellent results but uploads your image, limits free downloads to low resolution and charges credits for full-size output. FreeBG trades a one-off model download for unlimited, full-resolution, private processing at no cost.',
+          q: 'How does freebg.app compare with remove.bg or Photoroom?',
+          a: 'Those products are excellent cloud tools, but free tiers often upload images, watermark results or limit free resolution. freebg.app trades a one-time ~40 MB model download for unlimited, private, full-resolution processing at no cost — a strong free background remover no watermark alternative when privacy and volume matter.',
         },
       ],
+      growth: {
+        heading: 'Guides & upcoming articles',
+        intro:
+          'More long-form guides are on the way for AdSense-ready topical coverage. Start with the pages below, or check back for deep dives on alternatives and no-upload workflows.',
+        links: [
+          {
+            title: 'How to remove a background from an image',
+            description:
+              'Step-by-step guide to a background remover no upload workflow at full resolution.',
+            pageKey: 'guide',
+          },
+          {
+            title: 'Product photo background remover',
+            description:
+              'White and transparent backgrounds for ecommerce catalogues — unlimited and free.',
+            pageKey: 'productPhotos',
+          },
+          {
+            title: 'Profile picture background remover',
+            description:
+              'Clean headshots for LinkedIn and CVs with a private background remover.',
+            pageKey: 'profilePictures',
+          },
+          {
+            title: 'Best free alternatives to remove.bg',
+            description:
+              'Compare free background remover no watermark options that keep HD output.',
+            comingSoon: true,
+          },
+          {
+            title: 'How to remove a background without uploading',
+            description:
+              'Why on-device AI beats cloud uploads for sensitive photos and client work.',
+            comingSoon: true,
+          },
+          {
+            title: 'Quitar fondo gratis sin registro (Spanish guide)',
+            description:
+              'Remover fondo de imagen online gratis, privado e ilimitado — already available in Spanish.',
+            href: '/es',
+          },
+        ],
+      },
     },
 
     guide: {

@@ -1,9 +1,10 @@
 import { HeroTool } from './HeroTool'
-import { PrivacyBadge } from './PrivacyBadge'
+import { TrustBadges } from './TrustBadges'
 import { ContactForm } from './ContactForm'
 import { Faq } from './Faq'
 import { HowToSteps } from './HowToSteps'
 import { RelatedLinks } from './RelatedLinks'
+import { GrowthSection } from './GrowthSection'
 import { Layout } from './Layout'
 import { useI18n } from '../i18n'
 import { useSeo } from '../seo/useSeo'
@@ -23,10 +24,10 @@ export function Page({ route }: { route: RouteDef }) {
           <h1 className="text-[1.75rem] leading-[1.1] font-black tracking-tight text-ink sm:text-4xl md:text-5xl dark:text-white">
             {page.h1}
           </h1>
-          <p className="max-w-xl text-sm text-ink/60 sm:text-base dark:text-white/55">
+          <p className="max-w-xl text-sm font-semibold text-ink/70 sm:text-base dark:text-white/65">
             {page.subtitle}
           </p>
-          {page.showTool && <PrivacyBadge />}
+          {page.showTool && <TrustBadges />}
         </header>
 
         {page.showTool && (
@@ -57,7 +58,7 @@ export function Page({ route }: { route: RouteDef }) {
           </section>
         )}
 
-        <div className="prose-content mx-auto mt-12 max-w-3xl">
+        <article className="prose-content mx-auto mt-12 max-w-3xl">
           {!page.showContactForm && page.intro && (
             <p className="text-base leading-relaxed text-ink/70 dark:text-white/65">
               {page.intro}
@@ -77,6 +78,21 @@ export function Page({ route }: { route: RouteDef }) {
                   ))}
                 </ul>
               )}
+              {section.subsections?.map((sub) => (
+                <div key={sub.heading}>
+                  <h3>{sub.heading}</h3>
+                  {sub.paragraphs?.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                  {sub.bullets && (
+                    <ul>
+                      {sub.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
             </section>
           ))}
 
@@ -85,8 +101,9 @@ export function Page({ route }: { route: RouteDef }) {
             <Faq heading={t.faqHeading} items={page.faq} />
           )}
 
+          {page.growth && <GrowthSection growth={page.growth} />}
           {!page.showContactForm && <RelatedLinks current={route.key} />}
-        </div>
+        </article>
       </div>
     </Layout>
   )

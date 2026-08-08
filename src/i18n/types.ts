@@ -4,6 +4,11 @@ export type Section = {
   heading: string
   paragraphs?: string[]
   bullets?: string[]
+  subsections?: {
+    heading: string
+    paragraphs?: string[]
+    bullets?: string[]
+  }[]
 }
 
 export type FaqItem = {
@@ -14,6 +19,17 @@ export type FaqItem = {
 export type HowTo = {
   name: string
   steps: { name: string; text: string }[]
+}
+
+export type GrowthLink = {
+  title: string
+  description: string
+  /** Internal PageKey when the article already exists. */
+  pageKey?: PageKey
+  /** External or future path; ignored when pageKey is set. */
+  href?: string
+  /** Shown as coming soon (no link). */
+  comingSoon?: boolean
 }
 
 export type PageContent = {
@@ -31,6 +47,12 @@ export type PageContent = {
   showTool: boolean
   /** Renders the contact form (Formspree). */
   showContactForm?: boolean
+  /** Optional growth / future articles block (home). */
+  growth?: {
+    heading: string
+    intro: string
+    links: GrowthLink[]
+  }
 }
 
 export type Dictionary = {
@@ -58,6 +80,10 @@ export type Dictionary = {
   }
   tagline: string
   badge: string
+  trustBadges: string[]
+  /** Localized SoftwareApplication featureList for JSON-LD. */
+  featureList: string[]
+  ogImageAlt: string
   tool: {
     dropTitle: string
     dropActive: string
@@ -66,6 +92,10 @@ export type Dictionary = {
     pasteHint: string
     orTrySample: string
     sample: string
+    samplePortrait: string
+    samplePortraitAlt: string
+    sampleProduct: string
+    sampleProductAlt: string
     remove: string
     tryAgain: string
     chooseAnother: string
@@ -139,6 +169,7 @@ export type Dictionary = {
     sourceNote: string
     contact: string
     rights: string
+    comingSoon: string
     sisters: {
       freepng: string
       freepdf: string

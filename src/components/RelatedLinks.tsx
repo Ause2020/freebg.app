@@ -19,7 +19,7 @@ export function RelatedLinks({ current }: { current: PageKey }) {
     <div className="mt-12 space-y-8">
       {others.length > 0 && (
         <nav aria-label={t.footer.product}>
-          <ul className="grid gap-3 sm:grid-cols-3">
+          <ul className="card-grid !mt-0 sm:!grid-cols-3">
             {others.map((key) => (
               <li key={key}>
                 <Link
@@ -44,7 +44,7 @@ export function RelatedLinks({ current }: { current: PageKey }) {
         <h2 className="!mt-0 mb-4 text-lg font-extrabold tracking-tight text-ink dark:text-white">
           {t.footer.moreTools}
         </h2>
-        <ul className="grid gap-3 sm:grid-cols-2">
+        <ul className="card-grid !mt-0">
           {SISTER_SITES.map((site) => (
             <li key={site.id}>
               <a
