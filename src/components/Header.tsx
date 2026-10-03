@@ -6,7 +6,12 @@ import { useTheme } from '../hooks/useTheme'
 import { alternates, routePath, type PageKey, type RouteDef } from '../content/routes'
 import { LOCALE_TAGS } from '../content/site'
 
-const NAV_KEYS: PageKey[] = ['home', 'guide', 'productPhotos', 'profilePictures']
+const NAV_KEYS: PageKey[] = [
+  'home',
+  'removeBgAlternative',
+  'guide',
+  'productPhotos',
+]
 
 export function Header({ route }: { route: RouteDef }) {
   const { t, locale } = useI18n()

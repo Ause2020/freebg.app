@@ -61,6 +61,9 @@ export type Dictionary = {
     guide: string
     productPhotos: string
     profilePictures: string
+    removeBgAlternative: string
+    photoroomAlternative: string
+    noUpload: string
     privacy: string
     terms: string
     contact: string

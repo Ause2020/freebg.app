@@ -3,7 +3,15 @@ import { useI18n } from '../i18n'
 import { routePath, type PageKey } from '../content/routes'
 import { SISTER_SITES, SITE_NAME, SOURCE_URL } from '../content/site'
 
-const TOOL_KEYS: PageKey[] = ['home', 'guide', 'productPhotos', 'profilePictures']
+const TOOL_KEYS: PageKey[] = [
+  'home',
+  'removeBgAlternative',
+  'photoroomAlternative',
+  'noUpload',
+  'guide',
+  'productPhotos',
+  'profilePictures',
+]
 const LEGAL_KEYS: PageKey[] = ['privacy', 'terms', 'contact']
 
 export function Footer() {

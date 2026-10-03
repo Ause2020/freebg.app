@@ -6,6 +6,9 @@ import { SISTER_SITES } from '../content/site'
 
 const CANDIDATES: PageKey[] = [
   'home',
+  'removeBgAlternative',
+  'photoroomAlternative',
+  'noUpload',
   'guide',
   'productPhotos',
   'profilePictures',

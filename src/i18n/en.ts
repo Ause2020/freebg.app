@@ -6,6 +6,9 @@ export const en: Dictionary = {
     guide: 'How-To Guide',
     productPhotos: 'Product Photos',
     profilePictures: 'Profile Pictures',
+    removeBgAlternative: 'remove.bg Alternative',
+    photoroomAlternative: 'Photoroom Alternative',
+    noUpload: 'No Upload',
     privacy: 'Privacy',
     terms: 'Terms',
     contact: 'Contact',
@@ -298,9 +301,9 @@ export const en: Dictionary = {
         },
       ],
       growth: {
-        heading: 'Guides & upcoming articles',
+        heading: 'Guides & comparisons',
         intro:
-          'More long-form guides are on the way for AdSense-ready topical coverage. Start with the pages below, or check back for deep dives on alternatives and no-upload workflows.',
+          'Guides and comparison pages you can open now — each one includes the same private tool above the fold.',
         links: [
           {
             title: 'How to remove a background from an image',
@@ -321,22 +324,22 @@ export const en: Dictionary = {
             pageKey: 'profilePictures',
           },
           {
-            title: 'Best free alternatives to remove.bg',
+            title: 'Best free alternative to remove.bg',
             description:
-              'Compare free background remover no watermark options that keep HD output.',
-            comingSoon: true,
+              'What changes when remove.bg moves to Canva — and a no-upload HD replacement.',
+            pageKey: 'removeBgAlternative',
+          },
+          {
+            title: 'Photoroom alternative',
+            description:
+              'Cut-outs without the app, the account or the watermark.',
+            pageKey: 'photoroomAlternative',
           },
           {
             title: 'How to remove a background without uploading',
             description:
               'Why on-device AI beats cloud uploads for sensitive photos and client work.',
-            comingSoon: true,
-          },
-          {
-            title: 'Quitar fondo gratis sin registro (Spanish guide)',
-            description:
-              'Remover fondo de imagen online gratis, privado e ilimitado — already available in Spanish.',
-            href: '/es',
+            pageKey: 'noUpload',
           },
         ],
       },
@@ -559,6 +562,309 @@ export const en: Dictionary = {
         {
           q: 'Is my photo stored anywhere?',
           a: 'No. It is read into your browser\'s memory, processed there, and discarded when you close the tab. Nothing is transmitted, logged or retained.',
+        },
+      ],
+    },
+
+    removeBgAlternative: {
+      title:
+        'remove.bg Alternative – Free, Unlimited, No Upload | freebg.app',
+      description:
+        'Free remove.bg alternative after the Canva move. Unlimited HD cut-outs, no watermark, no signup. Photos stay in your browser.',
+      h1: 'A free remove.bg alternative that never uploads your photo',
+      subtitle:
+        'Unlimited HD downloads, no watermark, no Canva account. The tool is right above.',
+      intro:
+        'remove.bg is moving into Canva. Its standalone site stops on 1 December 2026 at 9:00 a.m. CET, unused credits expire the same morning, and the self-serve API moves to Leonardo.Ai. If you need a remove.bg alternative that stays a simple web tool — free, unlimited and private — drop an image above. freebg.app runs the cut-out in your browser so the file never leaves your device.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'What is changing at remove.bg',
+          paragraphs: [
+            'Canva acquired remove.bg in 2021. In 2026 it is folding the consumer product into Canva and retiring the standalone website. That is a real problem if you liked a one-purpose page: open, drop, download. Canva is a design suite. Leonardo.Ai is an API platform. Neither is “paste a product shot and get a transparent PNG with no account.”',
+            'If you still hold pay-as-you-go credits, spend them before 1 December 2026. remove.bg’s own terms say unused credits expire that day and are not refunded or transferred to Canva.',
+          ],
+        },
+        {
+          heading: 'freebg.app vs remove.bg',
+          paragraphs: [
+            'remove.bg set the quality bar for cloud cut-outs. It also uploads every image, meters HD downloads, and now requires you to follow the brand into another product. freebg.app is the opposite architecture: the model downloads once (~40 MB), then your CPU or GPU does the work. That is why this remove.bg alternative can stay unlimited and free.',
+          ],
+          bullets: [
+            'Upload — remove.bg sends the file to a server. freebg.app never does.',
+            'Price — remove.bg credits expire; freebg.app has no credits, ever.',
+            'Watermark / resolution — freebg.app exports original pixels, including HD and 4K, with no watermark.',
+            'Account — none here. Canva/remove.bg want you inside their platform.',
+            'Batch — queue images locally and download a ZIP. No per-image invoice.',
+            'Offline — after the first model download, this tab keeps working without a network.',
+          ],
+        },
+        {
+          heading: 'When you should still use Canva or remove.bg',
+          paragraphs: [
+            'Use Canva if you already live there and need the cut-out inside a larger design. Use a cloud API if you process tens of thousands of images on a server. Use freebg.app when you want a private, unlimited, no-watermark remove.bg alternative for catalogues, client work, kids’ photos or anything you would rather not put on someone else’s GPU.',
+          ],
+        },
+        {
+          heading: 'How to switch in under a minute',
+          paragraphs: [
+            'There is nothing to migrate. Bookmarks that pointed at remove.bg can point here. Paste or drop the same JPG, PNG or WEBP files you used before. Download a transparent PNG, or export straight onto white for Amazon-style listings. If you also need resize or compress after the cut-out, continue on FreePNG.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to replace remove.bg with a no-upload tool',
+        steps: [
+          {
+            name: 'Open this page',
+            text: 'Stay here — the background remover is the block above. No Canva account and no credit pack.',
+          },
+          {
+            name: 'Add the same images you used on remove.bg',
+            text: 'Drag, browse or paste. Several files go into a local queue.',
+          },
+          {
+            name: 'Remove the background on your device',
+            text: 'The AI runs in this tab. Watch the progress bar; nothing is posted to a server.',
+          },
+          {
+            name: 'Download HD output',
+            text: 'Save PNG, JPG or WEBP at the original resolution, with no watermark.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Is remove.bg really shutting down?',
+          a: 'The standalone website is scheduled to stop on 1 December 2026 at 9:00 a.m. CET. Background removal moves into Canva; the self-serve API moves to Leonardo.Ai. Enterprise API contracts are a separate case — check remove.bg’s own FAQ.',
+        },
+        {
+          q: 'Will my remove.bg credits transfer to Canva?',
+          a: 'No. Unused PAYG and other credits expire on 1 December 2026 and are not refunded. Spend the balance before that morning if you still have one.',
+        },
+        {
+          q: 'Is freebg.app a full-quality remove.bg alternative?',
+          a: 'It uses an on-device IS-Net-class model. People, products, animals and vehicles come out well. Hair, glass and motion blur are hard for every automatic tool, including paid cloud ones. Export onto white or use the refine brush when an edge is imperfect.',
+        },
+        {
+          q: 'Do I need an account to download HD?',
+          a: 'No. HD and 4K are not gated. There is no free-preview watermark.',
+        },
+        {
+          q: 'Are my images uploaded like on remove.bg?',
+          a: 'No. This is a background remover no upload. Confirm in DevTools → Network: your photo is not in any request body.',
+        },
+        {
+          q: 'Can I use the result commercially?',
+          a: 'Yes. We add no watermark and claim no licence over your files. You still need the rights to the original photo.',
+        },
+      ],
+    },
+
+    photoroomAlternative: {
+      title:
+        'Photoroom Alternative – Free, No Watermark, Private | freebg.app',
+      description:
+        'Free Photoroom alternative for cut-outs. No app, no signup, no watermark. Unlimited HD in your browser — photos never leave your device.',
+      h1: 'A free Photoroom alternative for simple, private cut-outs',
+      subtitle:
+        'No app install. No credits. Full resolution in the browser.',
+      intro:
+        'Photoroom is a strong product studio: backgrounds, shadows, batches and a polished mobile app. That power is also the lock-in — accounts, uploads and a paid plan when you outgrow the free tier. If you only need a Photoroom alternative for “remove background, download PNG,” freebg.app does that job with no app and no upload.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'What Photoroom is good at',
+          paragraphs: [
+            'Photoroom shines when you want a full listing studio: generated scenes, branded shadows, team templates and a phone-first workflow. If that is your daily job, keep paying for it. This page is for the other case: you opened Photoroom (or a clone) just to knock out a background and hit a watermark, a resize, or an upload you did not want.',
+          ],
+        },
+        {
+          heading: 'freebg.app vs Photoroom',
+          bullets: [
+            'Install — Photoroom wants the app or a logged-in web workspace. freebg.app is this page.',
+            'Upload — Photoroom processes in the cloud. freebg.app is a private background remover: pixels stay in the tab.',
+            'Cost — Photoroom’s free tier is a funnel. freebg.app has one tier: unlimited and free.',
+            'Watermark / HD — downloads here are clean and match the original resolution, including 4K.',
+            'Batch — local queue + ZIP, no credit burn per SKU.',
+            'Studio features — Photoroom wins on AI scenes and brand kits. We do not pretend otherwise.',
+          ],
+        },
+        {
+          heading: 'Who this Photoroom alternative is for',
+          subsections: [
+            {
+              heading: 'Sellers who only need a white background',
+              paragraphs: [
+                'Export onto exact white (RGB 255, 255, 255) for Amazon-style main images, or keep transparency for Shopify overlays. Process a folder without a monthly seat.',
+              ],
+            },
+            {
+              heading: 'Designers who refuse another SaaS',
+              paragraphs: [
+                'Drop a subject, download a transparent PNG, finish in Figma, Canva or Photoshop. No watermark to scrub before a client review.',
+              ],
+            },
+            {
+              heading: 'Anyone sending faces or unreleased products',
+              paragraphs: [
+                'A headshot or a pre-launch SKU does not belong on a third-party GPU by default. On-device inference is the conservative choice.',
+              ],
+            },
+          ],
+        },
+        {
+          heading: 'Quality, honestly',
+          paragraphs: [
+            'Photoroom’s cloud models are tuned for merch and portraits and can beat a single in-browser model on hair, jewellery and glass. For everyday products, people and pets, an IS-Net-class local model is good enough to publish. Soft edges disappear if you export onto a solid fill. The refine brush covers leftover patches.',
+            'After the cut-out, resize or compress on FreePNG if the marketplace has a file-size cap.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to remove a background without Photoroom',
+        steps: [
+          {
+            name: 'Stay on this page',
+            text: 'No app store, no email gate. The drop zone is above.',
+          },
+          {
+            name: 'Add one image or a batch',
+            text: 'JPG, PNG or WEBP. Paste from the clipboard if the file is already copied.',
+          },
+          {
+            name: 'Run the local model',
+            text: 'First run caches about 40 MB. After that, each cut-out starts immediately.',
+          },
+          {
+            name: 'Download a clean file',
+            text: 'Transparent PNG, or JPG/WEBP on white or a custom colour. Full resolution, no watermark.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Is this a real Photoroom alternative or just a landing page?',
+          a: 'The same tool as the homepage runs above. It is a focused cut-out, not a Photoroom clone with scenes and brand kits.',
+        },
+        {
+          q: 'Does Photoroom upload my photos?',
+          a: 'Yes — cloud editing requires the file on their servers. freebg.app does not upload the image. You can verify that in the Network tab.',
+        },
+        {
+          q: 'Will I get a watermark on the free plan?',
+          a: 'There is no free plan here. Every download is unwatermarked.',
+        },
+        {
+          q: 'Can I batch like Photoroom?',
+          a: 'Yes, locally. Add several files, wait for the queue, download a ZIP.',
+        },
+        {
+          q: 'Does it work on iPhone?',
+          a: 'Yes in Safari or Chrome. Convert HEIC to JPG first (Camera → Formats → Most Compatible), or the browser cannot open the file.',
+        },
+        {
+          q: 'Can I keep Photoroom for design and use this for volume?',
+          a: 'Yes. Many people keep a paid studio for campaigns and use a no-upload tool for bulk SKUs and sensitive shots.',
+        },
+      ],
+    },
+
+    noUpload: {
+      title:
+        'How to Remove a Background Without Uploading | freebg.app',
+      description:
+        'Remove a background without uploading the photo. On-device AI, no account, no watermark. Full HD and 4K stay on your device.',
+      h1: 'How to remove a background without uploading your photo',
+      subtitle:
+        'On-device AI. Nothing leaves this tab. Full resolution download.',
+      intro:
+        'Most “free background removers” are upload forms with a GPU on the other end. That is fine for a coffee mug. It is a bad default for ID-adjacent headshots, kids, client work under NDA, or an unreleased product. A background remover no upload flips the model: the AI comes to your browser, the pixels never leave.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Why “no upload” is not a slogan',
+          paragraphs: [
+            'If the file crosses the network, you are trusting logs, backups, staff access, subprocessors and a terms-of-service clause you did not read. GDPR treats a face as biometric data when it identifies you. Marketplace catalogues leak launch dates. School photos should not train someone else’s model.',
+            'freebg.app is a private background remover by architecture. Decode, segment and export happen in this tab with WebGPU or WebAssembly. Close the tab and the buffers are gone.',
+          ],
+        },
+        {
+          heading: 'How to verify that nothing was uploaded',
+          bullets: [
+            'Open DevTools → Network before you drop the file.',
+            'Process the image. You should see the one-time model/runtime download, not a POST that contains your photo.',
+            'After the model is cached, disconnect Wi-Fi and run another image. If it still works, the pixels never needed a server.',
+            'Nothing in the address bar should look like an upload API for your bitmap.',
+          ],
+        },
+        {
+          heading: 'Step-by-step: cut-out without the cloud',
+          paragraphs: [
+            'Use the tool above. Drag a JPG, PNG or WEBP, or paste with Ctrl + V. Click Remove Background. Compare before and after, optionally paint leftovers with the magic eraser, then download a transparent PNG at the original size. That is the whole workflow — the same one described on our how-to guide, minus any third-party server.',
+          ],
+        },
+        {
+          heading: 'When a cloud tool is still the right call',
+          paragraphs: [
+            'Upload-based editors can win on the hardest hair, glass and jewellery, and they scale to huge server batches. Use them for public marketing assets you would post anyway. Prefer no-upload for anything you would not attach to a random email.',
+            'If you came here from a remove.bg or Photoroom comparison, the same on-device engine is on those pages too.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to remove a background without uploading',
+        steps: [
+          {
+            name: 'Keep the file on your device',
+            text: 'Do not email it to a web app. Drop it on the zone above so it is only read into memory.',
+          },
+          {
+            name: 'Let the model download once',
+            text: 'About 40 MB of AI assets are cached by the browser. That is the only required network step.',
+          },
+          {
+            name: 'Process locally',
+            text: 'Watch the progress indicator. Segmentation runs on your CPU or GPU inside this tab.',
+          },
+          {
+            name: 'Optional: go offline and retry',
+            text: 'After the cache is warm, disconnect and process a second image to prove the background remover no upload claim.',
+          },
+          {
+            name: 'Download the PNG',
+            text: 'Full resolution, no watermark. Close the tab when you are done — nothing remains on a server because nothing was sent.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Is a background remover no upload actually possible?',
+          a: 'Yes. In-browser ONNX / WebAssembly models have been good enough for everyday cut-outs for years. The trade-off is a first-visit download and more load on your device.',
+        },
+        {
+          q: 'Can you see my image anyway?',
+          a: 'No. It is never transmitted to freebg.app. We could not store or train on it if we wanted to.',
+        },
+        {
+          q: 'Does “no upload” mean it works offline?',
+          a: 'After the first visit, yes. The model and app are cached. The first visit still needs a network to fetch those files.',
+        },
+        {
+          q: 'What about the sample images?',
+          a: 'Samples are public files on this site. Your own photo is not sent when you use the drop zone.',
+        },
+        {
+          q: 'Is this the same as a VPN or “incognito upload”?',
+          a: 'No. Incognito still uploads. A VPN still uploads. No upload means the bitmap never becomes an HTTP body.',
+        },
+        {
+          q: 'Which formats stay local?',
+          a: 'JPG, PNG and WEBP. HEIC must be converted on-device first because browsers cannot decode it natively.',
+        },
+        {
+          q: 'Can I do this on a phone?',
+          a: 'Yes on current Safari and Chrome. Very large 4K files may run out of memory on older phones.',
         },
       ],
     },

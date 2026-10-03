@@ -6,6 +6,9 @@ export const es: Dictionary = {
     guide: 'Guía paso a paso',
     productPhotos: 'Fotos de producto',
     profilePictures: 'Fotos de perfil',
+    removeBgAlternative: 'Alternativa a remove.bg',
+    photoroomAlternative: 'Alternativa a Photoroom',
+    noUpload: 'Sin subir',
     privacy: 'Privacidad',
     terms: 'Términos',
     contact: 'Contacto',
@@ -298,9 +301,9 @@ export const es: Dictionary = {
         },
       ],
       growth: {
-        heading: 'Guías y próximos artículos',
+        heading: 'Guías y comparativas',
         intro:
-          'Vamos a ampliar la cobertura temática con guías listas para AdSense. Empieza por las páginas de abajo o vuelve pronto para comparativas y flujos sin subida.',
+          'Guías y comparativas que ya puedes abrir — cada una incluye la misma herramienta privada arriba.',
         links: [
           {
             title: 'Cómo quitar el fondo de una imagen',
@@ -321,22 +324,22 @@ export const es: Dictionary = {
             pageKey: 'profilePictures',
           },
           {
-            title: 'Mejores alternativas gratis a remove.bg',
+            title: 'Mejor alternativa gratis a remove.bg',
             description:
-              'Comparativa de opciones para quitar fondo gratis sin marca de agua en HD.',
-            comingSoon: true,
+              'Qué cambia cuando remove.bg pasa a Canva — y un recambio HD sin subir archivos.',
+            pageKey: 'removeBgAlternative',
+          },
+          {
+            title: 'Alternativa a Photoroom',
+            description:
+              'Recortes sin app, sin cuenta y sin marca de agua.',
+            pageKey: 'photoroomAlternative',
           },
           {
             title: 'Cómo quitar el fondo sin subir la imagen',
             description:
               'Por qué la IA en el dispositivo gana a la nube con fotos sensibles o de clientes.',
-            comingSoon: true,
-          },
-          {
-            title: 'Free background remover (English)',
-            description:
-              'Unlimited, private, no watermark HD background remover — English homepage.',
-            href: '/',
+            pageKey: 'noUpload',
           },
         ],
       },
@@ -559,6 +562,309 @@ export const es: Dictionary = {
         {
           q: '¿Se guarda mi foto en algún sitio?',
           a: 'No. Se carga en la memoria de tu navegador, se procesa allí y se descarta al cerrar la pestaña. No se transmite, ni se registra, ni se conserva nada.',
+        },
+      ],
+    },
+
+    removeBgAlternative: {
+      title:
+        'Alternativa a remove.bg – Gratis, Ilimitada, Sin Subir | freebg.app',
+      description:
+        'Alternativa gratis a remove.bg tras el paso a Canva. Recortes HD ilimitados, sin marca de agua ni registro. Tus fotos no salen del navegador.',
+      h1: 'Alternativa gratis a remove.bg que nunca sube tu foto',
+      subtitle:
+        'Descargas HD ilimitadas, sin marca de agua y sin cuenta de Canva. La herramienta está arriba.',
+      intro:
+        'remove.bg se integra en Canva. El sitio independiente deja de estar disponible el 1 de diciembre de 2026 a las 9:00 CET, los créditos no usados caducan esa misma mañana y la API de autoservicio pasa a Leonardo.Ai. Si necesitas una alternativa a remove.bg que siga siendo una web simple —gratis, ilimitada y privada— suelta una imagen arriba. freebg.app recorta en tu navegador: el archivo no sale de tu dispositivo.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Qué cambia en remove.bg',
+          paragraphs: [
+            'Canva compró remove.bg en 2021. En 2026 mete el producto de consumo dentro de Canva y retira la web independiente. Es un problema si querías una página de un solo uso: abrir, soltar, descargar. Canva es una suite de diseño. Leonardo.Ai es una plataforma de API. Ninguna es “pega una foto de producto y baja un PNG transparente sin cuenta”.',
+            'Si aún tienes créditos de pago por uso, gástalos antes del 1 de diciembre de 2026. Los términos de remove.bg dicen que los créditos no usados caducan ese día y no se reembolsan ni se pasan a Canva.',
+          ],
+        },
+        {
+          heading: 'freebg.app frente a remove.bg',
+          paragraphs: [
+            'remove.bg marcó el listón de calidad en la nube. También sube cada imagen, limita las descargas HD y ahora te empuja a otro producto. freebg.app es la arquitectura contraria: el modelo se descarga una vez (~40 MB) y tu CPU o GPU hace el trabajo. Por eso esta alternativa a remove.bg puede ser ilimitada y gratis.',
+          ],
+          bullets: [
+            'Subida — remove.bg envía el archivo a un servidor. freebg.app no.',
+            'Precio — los créditos de remove.bg caducan; aquí no hay créditos.',
+            'Marca de agua / resolución — se exportan los píxeles originales, HD y 4K, sin marca de agua.',
+            'Cuenta — ninguna. Canva/remove.bg quieren que entres en su plataforma.',
+            'Lotes — cola local y ZIP. Sin factura por imagen.',
+            'Sin conexión — tras la primera descarga del modelo, la pestaña sigue funcionando.',
+          ],
+        },
+        {
+          heading: 'Cuándo seguir con Canva o remove.bg',
+          paragraphs: [
+            'Usa Canva si ya vives ahí y el recorte va dentro de un diseño mayor. Usa una API en la nube si procesas decenas de miles de imágenes en servidor. Usa freebg.app cuando quieras una alternativa a remove.bg privada e ilimitada para catálogos, clientes, fotos de niños o cualquier archivo que no quieras en la GPU de un tercero.',
+          ],
+        },
+        {
+          heading: 'Cómo cambiar en menos de un minuto',
+          paragraphs: [
+            'No hay nada que migrar. Los favoritos que apuntaban a remove.bg pueden apuntar aquí. Pega o suelta los mismos JPG, PNG o WEBP. Descarga un PNG transparente o exporta a blanco para fichas tipo Amazon. Si después necesitas redimensionar o comprimir, sigue en FreePNG.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo sustituir remove.bg por una herramienta sin subida',
+        steps: [
+          {
+            name: 'Abre esta página',
+            text: 'Quédate aquí: el quitar fondo es el bloque de arriba. Sin cuenta de Canva y sin pack de créditos.',
+          },
+          {
+            name: 'Añade las mismas imágenes que usabas en remove.bg',
+            text: 'Arrastra, busca o pega. Varios archivos entran en una cola local.',
+          },
+          {
+            name: 'Quita el fondo en tu dispositivo',
+            text: 'La IA corre en esta pestaña. Mira la barra de progreso; no se envía nada a un servidor.',
+          },
+          {
+            name: 'Descarga en HD',
+            text: 'Guarda PNG, JPG o WEBP a la resolución original, sin marca de agua.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿De verdad cierra remove.bg?',
+          a: 'La web independiente está prevista para el 1 de diciembre de 2026 a las 9:00 CET. El quitar fondo pasa a Canva; la API de autoservicio, a Leonardo.Ai. Los contratos enterprise son otro caso: consulta el FAQ de remove.bg.',
+        },
+        {
+          q: '¿Mis créditos de remove.bg pasan a Canva?',
+          a: 'No. Los créditos PAYG y el resto caducan el 1 de diciembre de 2026 y no se reembolsan. Gasta el saldo antes de esa mañana si aún tienes.',
+        },
+        {
+          q: '¿Es freebg.app una alternativa a remove.bg de calidad completa?',
+          a: 'Usa un modelo IS-Net en el dispositivo. Personas, productos, animales y vehículos salen bien. Pelo, cristal y desenfoque son difíciles para cualquier herramienta automática, también las de pago. Exporta a blanco o usa el pincel de retoque si un borde falla.',
+        },
+        {
+          q: '¿Necesito cuenta para descargar en HD?',
+          a: 'No. HD y 4K no están bloqueados. No hay marca de agua de vista previa.',
+        },
+        {
+          q: '¿Se suben mis imágenes como en remove.bg?',
+          a: 'No. Es quitar fondo sin subir archivos. Compruébalo en DevTools → Red: tu foto no va en el cuerpo de ninguna petición.',
+        },
+        {
+          q: '¿Puedo usar el resultado con fines comerciales?',
+          a: 'Sí. No añadimos marca de agua ni reclamamos licencia sobre tus archivos. Sigues necesitando los derechos de la foto original.',
+        },
+      ],
+    },
+
+    photoroomAlternative: {
+      title:
+        'Alternativa a Photoroom – Gratis, Sin Marca de Agua | freebg.app',
+      description:
+        'Alternativa gratis a Photoroom para recortes. Sin app, sin registro, sin marca de agua. HD ilimitado en el navegador: tus fotos no salen del dispositivo.',
+      h1: 'Alternativa gratis a Photoroom para recortes simples y privados',
+      subtitle:
+        'Sin instalar app. Sin créditos. Resolución completa en el navegador.',
+      intro:
+        'Photoroom es un estudio de producto potente: fondos, sombras, lotes y una app móvil muy cuidada. Ese poder también es el candado — cuentas, subidas y un plan de pago cuando se acaba lo gratis. Si solo necesitas una alternativa a Photoroom para “quitar fondo y bajar PNG”, freebg.app hace ese trabajo sin app y sin subir nada.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'En qué es bueno Photoroom',
+          paragraphs: [
+            'Photoroom brilla cuando quieres un estudio de fichas: escenas generadas, sombras de marca, plantillas de equipo y flujo en el móvil. Si ese es tu trabajo diario, sigue pagándolo. Esta página es para el otro caso: abriste Photoroom (o un clon) solo para quitar un fondo y te encontraste marca de agua, recorte de resolución o una subida que no querías.',
+          ],
+        },
+        {
+          heading: 'freebg.app frente a Photoroom',
+          bullets: [
+            'Instalación — Photoroom quiere la app o un espacio web con sesión. freebg.app es esta página.',
+            'Subida — Photoroom procesa en la nube. freebg.app es un quitar fondo privado: los píxeles se quedan en la pestaña.',
+            'Precio — el plan gratis de Photoroom es un embudo. Aquí hay un solo plan: ilimitado y gratis.',
+            'Marca de agua / HD — las descargas son limpias y coinciden con la resolución original, incluido 4K.',
+            'Lotes — cola local + ZIP, sin quemar créditos por SKU.',
+            'Estudio — Photoroom gana en escenas IA y kits de marca. No lo negamos.',
+          ],
+        },
+        {
+          heading: 'Para quién es esta alternativa a Photoroom',
+          subsections: [
+            {
+              heading: 'Vendedores que solo necesitan fondo blanco',
+              paragraphs: [
+                'Exporta a blanco exacto (RGB 255, 255, 255) para la imagen principal tipo Amazon, o deja transparencia para Shopify. Procesa una carpeta sin pagar un asiento al mes.',
+              ],
+            },
+            {
+              heading: 'Diseñadores que no quieren otro SaaS',
+              paragraphs: [
+                'Suelta el sujeto, descarga un PNG transparente y termina en Figma, Canva o Photoshop. Sin marca de agua que borrar antes del cliente.',
+              ],
+            },
+            {
+              heading: 'Quien envía caras o productos sin lanzar',
+              paragraphs: [
+                'Un retrato o un SKU prelanzamiento no debería ir por defecto a la GPU de un tercero. Inferencia en el dispositivo es la opción conservadora.',
+              ],
+            },
+          ],
+        },
+        {
+          heading: 'Calidad, con honestidad',
+          paragraphs: [
+            'Los modelos en la nube de Photoroom están afinados para merchandising y retratos y pueden ganar a un único modelo en el navegador con pelo, joyas y cristal. Para productos, personas y mascotas del día a día, un modelo local IS-Net basta para publicar. Los bordes suaves desaparecen si exportas a un color sólido. El pincel de retoque cubre restos.',
+            'Después del recorte, redimensiona o comprime en FreePNG si el marketplace limita el peso.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo quitar un fondo sin Photoroom',
+        steps: [
+          {
+            name: 'Quédate en esta página',
+            text: 'Sin tienda de apps ni muro de email. La zona de carga está arriba.',
+          },
+          {
+            name: 'Añade una imagen o un lote',
+            text: 'JPG, PNG o WEBP. Pega desde el portapapeles si ya copiaste el archivo.',
+          },
+          {
+            name: 'Ejecuta el modelo local',
+            text: 'La primera vez cachea unos 40 MB. Después cada recorte empieza al momento.',
+          },
+          {
+            name: 'Descarga un archivo limpio',
+            text: 'PNG transparente, o JPG/WEBP en blanco o color. Resolución completa, sin marca de agua.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿Es una alternativa real a Photoroom o solo una landing?',
+          a: 'Arriba corre la misma herramienta que en la home. Es un recorte enfocado, no un clon de Photoroom con escenas y kits de marca.',
+        },
+        {
+          q: '¿Photoroom sube mis fotos?',
+          a: 'Sí: editar en la nube implica el archivo en sus servidores. freebg.app no sube la imagen. Puedes verlo en la pestaña Red.',
+        },
+        {
+          q: '¿Habrá marca de agua en el plan gratis?',
+          a: 'Aquí no hay plan gratis. Cada descarga va sin marca de agua.',
+        },
+        {
+          q: '¿Puedo hacer lotes como en Photoroom?',
+          a: 'Sí, en local. Añade varios archivos, espera la cola y descarga un ZIP.',
+        },
+        {
+          q: '¿Funciona en iPhone?',
+          a: 'Sí en Safari o Chrome. Convierte HEIC a JPG primero (Cámara → Formatos → Más compatible) o el navegador no puede abrir el archivo.',
+        },
+        {
+          q: '¿Puedo seguir con Photoroom para diseño y usar esto para volumen?',
+          a: 'Sí. Mucha gente mantiene un estudio de pago para campañas y usa una herramienta sin subida para SKUs masivos y fotos sensibles.',
+        },
+      ],
+    },
+
+    noUpload: {
+      title:
+        'Cómo Quitar el Fondo Sin Subir la Imagen | freebg.app',
+      description:
+        'Quita el fondo sin subir la foto. IA en tu dispositivo, sin cuenta ni marca de agua. HD y 4K se quedan en tu ordenador o móvil.',
+      h1: 'Cómo quitar el fondo sin subir tu foto',
+      subtitle:
+        'IA en el dispositivo. Nada sale de esta pestaña. Descarga a resolución completa.',
+      intro:
+        'La mayoría de webs para “quitar fondo gratis” son formularios de subida con una GPU al otro lado. Vale para una taza. Es un mal valor por defecto para retratos tipo DNI, niños, trabajo bajo NDA o un producto sin lanzar. Quitar el fondo sin subir la imagen invierte el modelo: la IA viene a tu navegador y los píxeles no salen.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Por qué “sin subir” no es un eslogan',
+          paragraphs: [
+            'Si el archivo cruza la red, confías en logs, copias, acceso de personal, subencargados y una cláusula de términos que no leíste. El RGPD trata una cara como dato biométrico cuando te identifica. Un catálogo filtra fechas de lanzamiento. Las fotos del colegio no deberían entrenar el modelo de otro.',
+            'freebg.app es un quitar fondo privado por arquitectura. Decodificar, segmentar y exportar ocurren en esta pestaña con WebGPU o WebAssembly. Cierras la pestaña y los búferes desaparecen.',
+          ],
+        },
+        {
+          heading: 'Cómo comprobar que no se subió nada',
+          bullets: [
+            'Abre DevTools → Red antes de soltar el archivo.',
+            'Procesa la imagen. Deberías ver la descarga única del modelo, no un POST con tu foto.',
+            'Cuando el modelo esté en caché, corta el Wi-Fi y procesa otra. Si sigue funcionando, los píxeles no necesitaban servidor.',
+            'Nada en la barra de direcciones debería parecer una API de subida de tu bitmap.',
+          ],
+        },
+        {
+          heading: 'Paso a paso: recorte sin nube',
+          paragraphs: [
+            'Usa la herramienta de arriba. Arrastra un JPG, PNG o WEBP, o pega con Ctrl + V. Pulsa Quitar fondo. Compara antes y después, retoca restos con el borrador mágico si hace falta y descarga un PNG transparente al tamaño original. Ese es todo el flujo — el de la guía paso a paso, sin servidor de terceros.',
+          ],
+        },
+        {
+          heading: 'Cuándo la nube sigue siendo la opción correcta',
+          paragraphs: [
+            'Los editores con subida pueden ganar en pelo, cristal y joyas muy difíciles, y escalan lotes enormes en servidor. Úsalos para piezas de marketing que publicarías igual. Prefiere no subir nada de lo que no adjuntarías a un email al azar.',
+            'Si llegaste desde la comparativa con remove.bg o Photoroom, el mismo motor en el dispositivo está en esas páginas.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo quitar el fondo sin subir la imagen',
+        steps: [
+          {
+            name: 'Deja el archivo en tu dispositivo',
+            text: 'No lo envíes por correo a una web. Suéltalo arriba para que solo se lea en memoria.',
+          },
+          {
+            name: 'Deja que el modelo se descargue una vez',
+            text: 'Unos 40 MB de IA quedan en la caché del navegador. Ese es el único paso de red obligatorio.',
+          },
+          {
+            name: 'Procesa en local',
+            text: 'Mira el indicador de progreso. La segmentación corre en tu CPU o GPU dentro de esta pestaña.',
+          },
+          {
+            name: 'Opcional: desconéctate y repite',
+            text: 'Con la caché caliente, corta la red y procesa una segunda imagen para demostrar que no hay subida.',
+          },
+          {
+            name: 'Descarga el PNG',
+            text: 'Resolución completa, sin marca de agua. Cierra la pestaña: no queda nada en un servidor porque no se envió nada.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿Se puede quitar el fondo sin subir la foto de verdad?',
+          a: 'Sí. Los modelos ONNX / WebAssembly en el navegador bastan para recortes del día a día. El intercambio es una descarga la primera vez y más carga en tu dispositivo.',
+        },
+        {
+          q: '¿Podéis ver mi imagen de todos modos?',
+          a: 'No. Nunca se transmite a freebg.app. No podríamos guardarla ni entrenar con ella aunque quisiéramos.',
+        },
+        {
+          q: '¿“Sin subir” significa que funciona sin conexión?',
+          a: 'Tras la primera visita, sí. El modelo y la app quedan en caché. La primera visita sigue necesitando red para esos archivos.',
+        },
+        {
+          q: '¿Y las imágenes de ejemplo?',
+          a: 'Los ejemplos son archivos públicos de este sitio. Tu foto no se envía cuando usas la zona de carga.',
+        },
+        {
+          q: '¿Es lo mismo que un VPN o “subir en incógnito”?',
+          a: 'No. Incógnito también sube. Un VPN también sube. Sin subida significa que el bitmap no se convierte en cuerpo HTTP.',
+        },
+        {
+          q: '¿Qué formatos se quedan en local?',
+          a: 'JPG, PNG y WEBP. HEIC hay que convertirlo antes en el dispositivo porque los navegadores no lo decodifican de forma nativa.',
+        },
+        {
+          q: '¿Puedo hacerlo en el móvil?',
+          a: 'Sí en Safari y Chrome actuales. Archivos 4K muy grandes pueden quedarse sin memoria en móviles viejos.',
         },
       ],
     },

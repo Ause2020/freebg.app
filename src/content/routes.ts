@@ -6,6 +6,9 @@ export type PageKey =
   | 'guide'
   | 'productPhotos'
   | 'profilePictures'
+  | 'removeBgAlternative'
+  | 'photoroomAlternative'
+  | 'noUpload'
   | 'privacy'
   | 'terms'
   | 'contact'
@@ -67,6 +70,51 @@ export const ROUTES: readonly RouteDef[] = [
     locale: 'es',
     path: '/es/quitar-fondo-foto-de-perfil',
     priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  {
+    key: 'removeBgAlternative',
+    locale: 'en',
+    path: '/remove-bg-alternative',
+    priority: 0.9,
+    changefreq: 'weekly',
+  },
+  {
+    key: 'removeBgAlternative',
+    locale: 'es',
+    path: '/es/alternativa-a-remove-bg',
+    priority: 0.9,
+    changefreq: 'weekly',
+  },
+
+  {
+    key: 'photoroomAlternative',
+    locale: 'en',
+    path: '/photoroom-alternative',
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+  {
+    key: 'photoroomAlternative',
+    locale: 'es',
+    path: '/es/alternativa-a-photoroom',
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
+  {
+    key: 'noUpload',
+    locale: 'en',
+    path: '/how-to-remove-background-without-uploading',
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+  {
+    key: 'noUpload',
+    locale: 'es',
+    path: '/es/quitar-fondo-sin-subir-imagen',
+    priority: 0.8,
     changefreq: 'monthly',
   },
 
