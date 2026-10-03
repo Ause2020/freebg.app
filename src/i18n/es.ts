@@ -9,6 +9,11 @@ export const es: Dictionary = {
     removeBgAlternative: 'Alternativa a remove.bg',
     photoroomAlternative: 'Alternativa a Photoroom',
     noUpload: 'Sin subir',
+    amazonWhite: 'Fondo blanco Amazon',
+    logo: 'Logo',
+    screenshot: 'Captura',
+    signature: 'Firma',
+    removeBgShutdown: 'Cierre de remove.bg',
     privacy: 'Privacidad',
     terms: 'Términos',
     contact: 'Contacto',
@@ -141,6 +146,7 @@ export const es: Dictionary = {
     body:
       'FreeBG quita fondos en local con IA en el dispositivo (WebGPU o WebAssembly). No se sube nada a ningún servidor, así que tus fotos se quedan contigo. Sin cuentas, sin marcas de agua y sin límites diarios.',
     product: 'Herramientas',
+    useCases: 'Casos de uso',
     legal: 'Legal',
     moreTools: 'Más herramientas gratis',
     openSource: 'Código fuente',
@@ -340,6 +346,18 @@ export const es: Dictionary = {
             description:
               'Por qué la IA en el dispositivo gana a la nube con fotos sensibles o de clientes.',
             pageKey: 'noUpload',
+          },
+          {
+            title: 'Fondo blanco para Amazon',
+            description:
+              'Blanco RGB 255 para la imagen principal del marketplace — ilimitado y local.',
+            pageKey: 'amazonWhite',
+          },
+          {
+            title: 'remove.bg cierra',
+            description:
+              'Qué pasa el 1 de diciembre de 2026 con la web, los créditos y la API.',
+            pageKey: 'removeBgShutdown',
           },
         ],
       },
@@ -865,6 +883,416 @@ export const es: Dictionary = {
         {
           q: '¿Puedo hacerlo en el móvil?',
           a: 'Sí en Safari y Chrome actuales. Archivos 4K muy grandes pueden quedarse sin memoria en móviles viejos.',
+        },
+      ],
+    },
+
+    amazonWhite: {
+      title:
+        'Fondo Blanco Amazon Gratis – RGB 255 Sin Subir | freebg.app',
+      description:
+        'Crea fondos blancos listos para Amazon gratis. RGB 255, 255, 255, sin subir archivos ni marca de agua. HD ilimitado también para Shopify y eBay.',
+      h1: 'Fondo blanco Amazon – gratis, blanco exacto, sin subir',
+      subtitle:
+        'RGB 255, 255, 255. Resolución completa. Sin créditos por SKU.',
+      intro:
+        'Amazon es exigente con la imagen principal: producto sobre fondo blanco puro, ocupando casi todo el encuadre, sin marca de agua ni texto promocional. Una foto de un “fondo blanco” casi nunca es RGB 255, 255, 255. Suelta la toma arriba, elige Blanco y descarga. Eso es fondo blanco Amazon sin subir el catálogo.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Qué revisa Amazon de verdad',
+          bullets: [
+            'Imagen principal: fondo blanco puro (RGB 255, 255, 255).',
+            'El producto debe ocupar unos 85% del encuadre y verse entero.',
+            'Sin marcas de agua, sellos, recuadros ni texto promocional.',
+            'Google Shopping y muchos conectores rechazan lo mismo.',
+          ],
+          paragraphs: [
+            'eBay prefiere un fondo claro. Shopify y Etsy son más flexibles, pero un set blanco uniforme convierte mejor. Exportar a blanco exacto aquí gana a fotografiar un ciclo arrugado.',
+          ],
+        },
+        {
+          heading: 'Un flujo de catálogo que no quema créditos',
+          paragraphs: [
+            'Las herramientas en la nube cobran por imagen al salir del plan gratis. Como esto corre en tu máquina, puedes procesar una temporada de SKUs del tirón. Dispara con la misma luz, suelta el lote, elige Blanco, descarga el ZIP y súbelo a Seller Central o Shopify.',
+            '¿Necesitas un JPG más ligero? Comprime en FreePNG para que la ficha cargue antes.',
+          ],
+        },
+        {
+          heading: 'Por qué al vendedor le importa no subir',
+          paragraphs: [
+            'Productos sin lanzar, cajas de proveedor y etiquetas de precio en el encuadre son sensibles. Muchos quitafondos gratis se reservan derechos amplios sobre lo que subes. Aquí el archivo no sale de la pestaña — el mismo camino privado que la página de fotos de producto, afinado para el blanco de marketplace.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo hacer un fondo blanco Amazon',
+        steps: [
+          {
+            name: 'Suelta la foto de producto',
+            text: 'JPG, PNG o WEBP. Añade varios SKUs si quieres cola.',
+          },
+          {
+            name: 'Quita el fondo',
+            text: 'El modelo corre en local. Espera la barra de progreso.',
+          },
+          {
+            name: 'Elige Blanco',
+            text: 'Ese relleno es RGB 255, 255, 255 — la especificación de Amazon.',
+          },
+          {
+            name: 'Descarga JPG o PNG',
+            text: 'JPG suele pesar menos en fichas. Sin marca de agua.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿El blanco es el de Amazon?',
+          a: 'Sí. La opción Blanco rellena con RGB 255, 255, 255, que es lo que pide Amazon para la imagen principal.',
+        },
+        {
+          q: '¿Pasará Seller Central?',
+          a: 'Resuelve la regla del color de fondo. Sigue haciendo falta recorte, foco y que no haya texto. Relee la ayuda de imágenes de Amazon de tu categoría.',
+        },
+        {
+          q: '¿Puedo dejar una sombra suave?',
+          a: 'No de forma automática. El modelo trata las sombras proyectadas como fondo. Compón la sombra después si tu marca la necesita.',
+        },
+        {
+          q: '¿Cristal y joyas?',
+          a: 'Difícil para cualquier herramienta automática. Exportar a blanco suele dar una ficha usable porque las zonas transparentes también quedan blancas.',
+        },
+        {
+          q: '¿Sirve para Shopify y eBay?',
+          a: 'Sí. El mismo archivo blanco vale en Shopify, eBay, Etsy y Google Shopping.',
+        },
+        {
+          q: '¿Hay cobro por imagen?',
+          a: 'No. SKUs ilimitados, sin cuenta.',
+        },
+      ],
+    },
+
+    logo: {
+      title:
+        'Quitar Fondo a un Logo Gratis – PNG Transparente | freebg.app',
+      description:
+        'Quita el fondo de un logo gratis. PNG transparente, sin marca de agua y sin subir. La marca se queda en tu dispositivo, a tamaño original.',
+      h1: 'Quitar el fondo de un logo – PNG transparente gratis',
+      subtitle:
+        'Sin subir archivos de marca. Resolución completa. Sin marca de agua.',
+      intro:
+        'Un logo dentro de un rectángulo blanco se ve amateur en una diapositiva oscura o en una web. Quieres un PNG con transparencia real. Los quitafondos en la nube también dejan tu marca en el disco de otro. Esta página es quitar fondo sin subir para isotipos, wordmarks e iconos.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Qué funciona bien',
+          bullets: [
+            'Wordmarks e iconos sólidos sobre fondo liso o papel.',
+            'Logos tipo sticker fotografiados en un escritorio (recorta antes).',
+            'Iconos de app y badges que solo tienes en JPG aplanado.',
+          ],
+          paragraphs: [
+            'El SVG vectorial sigue siendo mejor si tienes el original. Usa esto cuando el único archivo que te enviaron es una foto o un PNG con caja.',
+          ],
+        },
+        {
+          heading: 'A qué prestar atención',
+          paragraphs: [
+            'Script fino, tipo recortado y sombras confunden a cualquier modelo. Si la marca es negra sobre blanco, un vectorizador puede quedar más limpio. Si es un badge de color sobre una foto recargada, recorta para que el logo llene el encuadre, procesa y retoca restos con el pincel.',
+            'No subas packs de identidad a webs random de “quitar fondo logo”. Aquí el archivo se queda en la pestaña. Después, redimensiona o convierte en FreePNG si necesitas favicon o cabecera.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo quitar el fondo de un logo',
+        steps: [
+          {
+            name: 'Recorta justo',
+            text: 'Dale al modelo el mínimo escritorio, captura o póster posible.',
+          },
+          {
+            name: 'Suelta el archivo arriba',
+            text: 'PNG o JPG. No se envía a ningún servidor.',
+          },
+          {
+            name: 'Deja transparencia',
+            text: 'Fondo en Transparente para obtener un PNG con alfa real.',
+          },
+          {
+            name: 'Revisa bordes',
+            text: 'Usa el antes/después y el pincel en las esquinas sucias.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿Convierte un logo JPG en PNG transparente de verdad?',
+          a: 'Sí. La salida es un PNG con canal alfa si dejas el fondo en Transparente.',
+        },
+        {
+          q: '¿Sustituye a Illustrator?',
+          a: 'No, si tienes vectores. Sí, si el único asset es una foto o un export aplanado.',
+        },
+        {
+          q: '¿Puedo hacer un pack entero de marca?',
+          a: 'Añade varios archivos y descarga un ZIP. Sigue siendo local e ilimitado.',
+        },
+        {
+          q: '¿Se sube mi marca?',
+          a: 'No. El mismo pipeline sin subida que el resto de freebg.app.',
+        },
+        {
+          q: 'El texto fino se ve mordido',
+          a: 'Exporta al color real de destino o vectoriza. El recorte automático sufre con tipos muy finos.',
+        },
+        {
+          q: '¿Entrada SVG?',
+          a: 'Los navegadores no tratan el SVG como un bitmap. Exporta un PNG grande desde tu app de diseño, o quédate con el SVG.',
+        },
+      ],
+    },
+
+    screenshot: {
+      title:
+        'Quitar Fondo a una Captura de Pantalla Gratis | freebg.app',
+      description:
+        'Quita el fondo de una captura gratis. Aísla UI, ventanas o móviles. Sin subir, sin marca de agua, PNG a resolución completa.',
+      h1: 'Quitar el fondo de una captura de pantalla',
+      subtitle:
+        'Aísla una ventana, un móvil o una UI. Nada sale del navegador.',
+      intro:
+        'Docs, landings y fichas de store suelen necesitar una ventana o un móvil — no el escritorio de detrás. Un quitar fondo de captura no debería subir UI sin lanzar. Suelta la captura arriba; quédate con el marco que quieres y pierde el wallpaper.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Mejores capturas de origen',
+          bullets: [
+            'Una sola ventana con borde claro contra el fondo.',
+            'Un mockup de móvil o portátil que no corte el bisel.',
+            'UI oscura sobre escritorio claro, o al revés — el contraste ayuda.',
+          ],
+          paragraphs: [
+            'Las sombras del sistema y las esquinas redondas son lo difícil. Si el modelo se come una sombra que querías, restáurala con el pincel o pon el PNG sobre una sombra nueva en Figma. Si deja wallpaper en las esquinas, bórralo.',
+          ],
+        },
+        {
+          heading: 'Cuándo no usar un recorte',
+          paragraphs: [
+            'Si necesitas un marco de dispositivo pixel-perfect, un kit de mockups queda más limpio. Usa esto cuando tienes una captura real y diez minutos, no un design system. En slides y Notion, un borde un poco blando sobre un color sólido desaparece.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo recortar una captura del escritorio',
+        steps: [
+          {
+            name: 'Captura un solo sujeto',
+            text: 'Una ventana o un dispositivo. Esconde paneles extra antes.',
+          },
+          {
+            name: 'Suelta el PNG o JPG',
+            text: 'El proceso se queda en esta pestaña — útil para UI sin publicar.',
+          },
+          {
+            name: 'Compara bordes',
+            text: 'Revisa esquinas redondas y la sombra del sistema en el control.',
+          },
+          {
+            name: 'Exporta transparente o sólido',
+            text: 'Transparente para mockups; un color de marca para slides.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿Conserva las esquinas redondas de la ventana?',
+          a: 'Suele sí si hay contraste. Retoca si una esquina queda cuadrada.',
+        },
+        {
+          q: '¿Puedo aislar una zona de la UI, no toda la ventana?',
+          a: 'Recorta primero y luego pasa la herramienta. Busca un sujeto principal.',
+        },
+        {
+          q: '¿Capturas retina?',
+          a: 'Se mantiene la resolución. Capturas 5K muy grandes pueden ahogar portátiles viejos.',
+        },
+        {
+          q: '¿Se sube la UI sin publicar?',
+          a: 'No. Por eso tiene sentido este flujo en freebg.app.',
+        },
+        {
+          q: 'Sale el chrome del navegador',
+          a: 'Recorta la barra de direcciones antes de soltar el archivo si solo quieres la página.',
+        },
+        {
+          q: '¿Fotogramas de vídeo?',
+          a: 'Un frame en JPG/PNG vale. No procesamos archivos de vídeo.',
+        },
+      ],
+    },
+
+    signature: {
+      title:
+        'Quitar Fondo a una Firma Gratis – PNG Transparente | freebg.app',
+      description:
+        'Quita el fondo de una firma gratis. De escaneo a PNG transparente para email, contratos y PDF. Sin subir y sin marca de agua.',
+      h1: 'Quitar el fondo de una firma',
+      subtitle:
+        'De foto o escaneo a PNG transparente. Se queda en tu dispositivo.',
+      intro:
+        'Una firma a bolígrafo sobre papel rayado no pinta en un pie de email como un rectángulo gris. Necesitas tinta sobre PNG transparente. Las firmas son dato de identidad: no las subas a un recortador random. Suelta el escaneo arriba y deja el archivo en local.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Cómo fotografiar la firma',
+          bullets: [
+            'Papel blanco o muy claro, sin renglones. Las líneas se vuelven “tinta” para el modelo.',
+            'Luz de día uniforme; evita la sombra de la mano.',
+            'Llena el encuadre. Un garabato minúsculo en una foto enorme deja basura en los bordes.',
+            'JPG o PNG. HEIC del móvil: convierte a JPG primero.',
+          ],
+        },
+        {
+          heading: 'Después del recorte',
+          paragraphs: [
+            'Si queda textura de papel, exporta a blanco para un PDF de contrato o bórrala con el pincel. Para email, un PNG transparente pequeño basta — encógelo en FreePNG para que no se coma el mensaje. Para un sello reutilizable en PDF, guarda el PNG a resolución completa y colócalo en FreePDF o en tu editor.',
+            'Una firma escaneada se puede abusar si se filtra. Como no se sube nada, cerrar la pestaña es toda la política de retención.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo hacer un PNG transparente de firma',
+        steps: [
+          {
+            name: 'Firma en papel en blanco',
+            text: 'Tinta oscura, sin renglones, buena luz.',
+          },
+          {
+            name: 'Suelta la foto o el escaneo',
+            text: 'El modelo corre en el navegador. La firma no se envía.',
+          },
+          {
+            name: 'Deja transparencia',
+            text: 'O elige blanco si el PNG va directo a un PDF tipo folio.',
+          },
+          {
+            name: 'Descarga y guárdala tú',
+            text: 'Nosotros no vemos el archivo, así que no podemos recuperarlo después.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿Aguanta tinta azul o negra?',
+          a: 'Sí en escaneos normales. El lápiz muy claro es mala fuente: vuelve a firmar con un bolígrafo más oscuro.',
+        },
+        {
+          q: '¿Papel de cuaderno rayado?',
+          a: 'Las líneas suelen quedarse. Usa papel en blanco o bórralas después.',
+        },
+        {
+          q: '¿Esto es “mi firma” legalmente?',
+          a: 'Es una foto de tu rúbrica. Las reglas de contrato dependen de tu jurisdicción. Esta herramienta solo quita el papel.',
+        },
+        {
+          q: '¿Guardáis firmas?',
+          a: 'No. Nunca llegan a nuestros servidores.',
+        },
+        {
+          q: 'Tamaño para email',
+          a: 'Redimensiona el PNG después. Una firma de 4000 px sobra en Gmail.',
+        },
+        {
+          q: '¿Varias firmas a la vez?',
+          a: 'Sí — lote y ZIP, sigue en local.',
+        },
+      ],
+    },
+
+    removeBgShutdown: {
+      title:
+        'remove.bg Cierra el 1 de Diciembre de 2026 – Qué Hacer | freebg.app',
+      description:
+        'La web de remove.bg cierra el 1 de diciembre de 2026. Caducan créditos. La API pasa a Leonardo. Alternativa gratis sin subir que puedes usar hoy.',
+      h1: 'remove.bg cierra el 1 de diciembre de 2026',
+      subtitle:
+        'Web, créditos y API de autoservicio cambian esa mañana. Arriba tienes una herramienta local gratis.',
+      intro:
+        'Canva retira la web independiente de remove.bg el 1 de diciembre de 2026 a las 9:00 CET. Los créditos no usados caducan esa misma mañana. La API de autoservicio pasa a Leonardo.Ai. Si quieres una página que siga haciendo una sola cosa — soltar imagen, bajar PNG — usa la herramienta de arriba. Lo de abajo sale del FAQ y los términos de remove.bg, no de rumores.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Las tres cosas que pasan el 1 de diciembre',
+          bullets: [
+            'La web independiente deja de estar. El recorte de consumo pasa a Canva.',
+            'Los créditos no usados (PAYG, acumulados, promos) caducan y no se reembolsan ni se pasan a Canva.',
+            'La API de autoservicio pasa a Leonardo.Ai. Los contratos enterprise son otro caso: lee el FAQ de remove.bg.',
+          ],
+          paragraphs: [
+            'Si aún tienes saldo, gástalo antes de esa mañana o dálo por perdido. No compres un pack a finales de noviembre salvo que lo vayas a agotar.',
+          ],
+        },
+        {
+          heading: 'Qué usar en lugar de la web independiente',
+          paragraphs: [
+            'Quédate en Canva si el recorte es un paso dentro de un diseño mayor. Pasa la API a Leonardo si ya integras el stack de Canva. Cambia a una herramienta sin subida como freebg.app si querías la pestaña antigua de remove.bg: HD ilimitado, sin cuenta, fotos en tu dispositivo. La página de alternativa a remove.bg tiene el lado a lado.',
+            'Guarda esta web en favoritos. De remove.bg no hay nada que exportar salvo la costumbre de soltar un archivo.',
+          ],
+        },
+        {
+          heading: 'Por qué existe esta página',
+          paragraphs: [
+            'La búsqueda se está llenando de posts de “remove.bg cierra” que esconden la fecha detrás de un registro. Deberías poder leer los hechos y probar un recambio en la misma vista. No somos Canva; no tenemos tus créditos; no podemos transferirlos.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'Cómo dejar remove.bg antes del 1 de diciembre de 2026',
+        steps: [
+          {
+            name: 'Gasta o asume los créditos perdidos',
+            text: 'Usa el PAYG que quede en remove.bg antes del 1 de diciembre de 2026 a las 9:00 CET.',
+          },
+          {
+            name: 'Cancela cobros que no necesites',
+            text: 'Para los planes mensuales para no pagar un producto que está a punto de desaparecer.',
+          },
+          {
+            name: 'Elige un flujo de recambio',
+            text: 'Canva para suite, Leonardo para API, freebg.app para recortes privados e ilimitados.',
+          },
+          {
+            name: 'Prueba un archivo real aquí',
+            text: 'Suelta una foto de producto arriba. Descarga HD sin marca de agua y sin cuenta.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: '¿De verdad cierra remove.bg?',
+          a: 'La web independiente está prevista para no estar disponible desde el 1 de diciembre de 2026 a las 9:00 CET. El quitar fondo sigue dentro de Canva. Confírmalo en el FAQ de remove.bg: Canva puede reescribir fechas.',
+        },
+        {
+          q: '¿Los créditos pasan a Canva Pro?',
+          a: 'No. Los créditos no usados caducan ese día y no se reembolsan, según los términos de remove.bg.',
+        },
+        {
+          q: '¿Qué pasa con la API?',
+          a: 'La API de autoservicio pasa a Leonardo.Ai el 1 de diciembre de 2026. Los contratos enterprise pueden continuar: revisa el contrato y la página de API de remove.bg.',
+        },
+        {
+          q: '¿freebg.app está ligado a Canva o remove.bg?',
+          a: 'No. Es una herramienta independiente, open source y en el navegador.',
+        },
+        {
+          q: '¿Podéis importar mi historial de remove.bg?',
+          a: 'No. Nunca recibimos esos archivos. Quédate con tus originales.',
+        },
+        {
+          q: '¿Esta web se quedará siendo una herramienta simple?',
+          a: 'Sí. Sin cuenta de Canva, sin pack de créditos y sin subir archivos.',
         },
       ],
     },

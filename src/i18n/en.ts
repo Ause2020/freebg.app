@@ -9,6 +9,11 @@ export const en: Dictionary = {
     removeBgAlternative: 'remove.bg Alternative',
     photoroomAlternative: 'Photoroom Alternative',
     noUpload: 'No Upload',
+    amazonWhite: 'Amazon White Background',
+    logo: 'Logo',
+    screenshot: 'Screenshot',
+    signature: 'Signature',
+    removeBgShutdown: 'remove.bg Closing',
     privacy: 'Privacy',
     terms: 'Terms',
     contact: 'Contact',
@@ -141,6 +146,7 @@ export const en: Dictionary = {
     body:
       'FreeBG removes backgrounds locally with on-device AI (WebGPU or WebAssembly). Nothing is uploaded to a server, so your photos stay on your device. No accounts, no watermarks, no daily limits.',
     product: 'Tools',
+    useCases: 'Use cases',
     legal: 'Legal',
     moreTools: 'More free tools',
     openSource: 'Source code',
@@ -340,6 +346,18 @@ export const en: Dictionary = {
             description:
               'Why on-device AI beats cloud uploads for sensitive photos and client work.',
             pageKey: 'noUpload',
+          },
+          {
+            title: 'Amazon white background',
+            description:
+              'Pure RGB 255 white for marketplace main images — unlimited and local.',
+            pageKey: 'amazonWhite',
+          },
+          {
+            title: 'remove.bg is shutting down',
+            description:
+              'What happens on 1 December 2026 to the site, credits and API.',
+            pageKey: 'removeBgShutdown',
           },
         ],
       },
@@ -865,6 +883,416 @@ export const en: Dictionary = {
         {
           q: 'Can I do this on a phone?',
           a: 'Yes on current Safari and Chrome. Very large 4K files may run out of memory on older phones.',
+        },
+      ],
+    },
+
+    amazonWhite: {
+      title:
+        'Amazon White Background Remover – Free RGB 255 | freebg.app',
+      description:
+        'Make Amazon-ready white backgrounds free. Pure RGB 255, 255, 255, no upload, no watermark. Unlimited HD for Shopify and eBay too.',
+      h1: 'Amazon white background – free, exact white, no upload',
+      subtitle:
+        'RGB 255, 255, 255. Full resolution. No credits per SKU.',
+      intro:
+        'Amazon’s main image rules are picky: the product on a pure white background, filling most of the frame, no watermark, no promo text. A photo of a “white” backdrop is almost never RGB 255, 255, 255. Drop a shot above, choose White, download. That is an Amazon white background without uploading your catalogue.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'What Amazon actually checks',
+          bullets: [
+            'Main image: pure white background (RGB 255, 255, 255).',
+            'Product should fill about 85% of the frame and be fully visible.',
+            'No watermarks, badges, inset pictures or promotional copy on the file.',
+            'Google Shopping and many 3P tools reject the same junk.',
+          ],
+          paragraphs: [
+            'eBay prefers a plain light background. Shopify and Etsy are looser, but a consistent white set still converts better. Exporting onto exact white here beats photographing a wrinkled sweep.',
+          ],
+        },
+        {
+          heading: 'A catalogue workflow that does not burn credits',
+          paragraphs: [
+            'Cloud tools charge per image once you leave the free tier. Because this runs on your machine, you can process a season of SKUs in one sitting. Shoot under the same light, drop the batch, pick White, download the ZIP, upload to Seller Central or Shopify.',
+            'Need a smaller JPG after the cut-out? Compress on FreePNG so listing pages load faster.',
+          ],
+        },
+        {
+          heading: 'Why sellers should care about no-upload',
+          paragraphs: [
+            'Unreleased products, supplier cartons and price stickers in the frame are commercially sensitive. Many free removers claim broad rights over anything you upload. Here the file never leaves the tab — the same private path as our product-photo page, tuned for marketplace white.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to make an Amazon white background',
+        steps: [
+          {
+            name: 'Drop the product photo',
+            text: 'JPG, PNG or WEBP. Add several SKUs if you want a queue.',
+          },
+          {
+            name: 'Remove the background',
+            text: 'The model runs locally. Wait for the progress bar.',
+          },
+          {
+            name: 'Choose White',
+            text: 'That fill is exact RGB 255, 255, 255 — the Amazon main-image spec.',
+          },
+          {
+            name: 'Download JPG or PNG',
+            text: 'JPG is usually smaller for listings. No watermark is added.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Is the white really Amazon white?',
+          a: 'Yes. The White option fills with RGB 255, 255, 255, which is what Amazon specifies for the main image.',
+        },
+        {
+          q: 'Will this pass Seller Central?',
+          a: 'It solves the background colour rule. You still need correct crop, focus and no text on the image. Always re-read the current Amazon image help page for your category.',
+        },
+        {
+          q: 'Can I keep a soft shadow?',
+          a: 'Not automatically. The model treats cast shadows as background. Composite a shadow later if your brand needs it.',
+        },
+        {
+          q: 'Glass and jewellery?',
+          a: 'Hard for every automatic tool. Exporting onto white still produces a usable listing because transparent areas become white too.',
+        },
+        {
+          q: 'Shopify and eBay as well?',
+          a: 'Yes. Same white file works on Shopify, eBay, Etsy and Google Shopping.',
+        },
+        {
+          q: 'Is there a per-image fee?',
+          a: 'No. Unlimited SKUs, no account.',
+        },
+      ],
+    },
+
+    logo: {
+      title:
+        'Remove Background From a Logo – Free Transparent PNG | freebg.app',
+      description:
+        'Remove a logo background free. Transparent PNG, no watermark, no upload. Keep brand files on your device — HD and original size.',
+      h1: 'Remove the background from a logo – free transparent PNG',
+      subtitle:
+        'No upload of brand assets. Full resolution. No watermark.',
+      intro:
+        'A logo on a white rectangle looks amateur the moment you drop it on a dark slide or a website. You want a real transparent PNG. Cloud removers also mean your trademark file sits on someone else’s disk. This page is a background remover no upload for marks, wordmarks and icons.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'What works well',
+          bullets: [
+            'Solid wordmarks and icons on a plain studio or paper background.',
+            'Sticker-style logos photographed on a desk (crop tight first).',
+            'App icons and badges you only have as a flattened JPG.',
+          ],
+          paragraphs: [
+            'Vector SVG is still better when you have the source. Use this tool when the only file you were sent is a photo or a PNG with a box around it.',
+          ],
+        },
+        {
+          heading: 'What to watch',
+          paragraphs: [
+            'Thin script, knockout type and drop shadows confuse every segmentation model. If the mark is black on white, you may get a cleaner result in a vector tracer. If it is a coloured badge on a busy photo, crop so the logo fills the frame, run it, then refine leftover pixels with the brush.',
+            'Do not upload brand guidelines packs to random “free logo background” sites. Here the file stays in the tab. After export, resize or convert on FreePNG if you need a favicon or a small header asset.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to remove a logo background',
+        steps: [
+          {
+            name: 'Crop tight',
+            text: 'Give the model as little desk, screenshot chrome or poster as possible.',
+          },
+          {
+            name: 'Drop the file above',
+            text: 'PNG or JPG. Nothing is sent to a server.',
+          },
+          {
+            name: 'Keep transparency',
+            text: 'Leave the background on Transparent so you get a real alpha PNG.',
+          },
+          {
+            name: 'Check edges',
+            text: 'Use the before/after slider and the refine brush on leftover corners.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Will it turn a JPG logo into a real transparent PNG?',
+          a: 'Yes. Output is a PNG with an alpha channel when you leave the background on Transparent.',
+        },
+        {
+          q: 'Should I use this instead of Illustrator?',
+          a: 'No, if you have vectors. Yes, if the only asset is a photo or a flattened export.',
+        },
+        {
+          q: 'Can I do a whole brand pack?',
+          a: 'Add multiple files and download a ZIP. Still local, still unlimited.',
+        },
+        {
+          q: 'Is my trademark uploaded?',
+          a: 'No. Same no-upload pipeline as the rest of freebg.app.',
+        },
+        {
+          q: 'Fine text looks chewed',
+          a: 'Export onto the colour you will actually place it on, or trace it in a vector tool. Automatic cut-outs struggle with hairline type.',
+        },
+        {
+          q: 'SVG input?',
+          a: 'Browsers do not treat SVG as a bitmap drop. Export a high-resolution PNG from your design app first, or keep the SVG.',
+        },
+      ],
+    },
+
+    screenshot: {
+      title:
+        'Remove Background From a Screenshot – Free PNG | freebg.app',
+      description:
+        'Remove a screenshot background free. Isolate UI, windows or phone screens. No upload, no watermark, full resolution PNG.',
+      h1: 'Remove the background from a screenshot',
+      subtitle:
+        'Isolate a window, phone or UI. Nothing leaves the browser.',
+      intro:
+        'Docs, landing pages and app-store assets often need one window or phone — not the messy desktop behind it. A screenshot background remover should not upload product UI you have not shipped. Drop the capture above; keep the chrome you want, lose the wallpaper.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'Best source captures',
+          bullets: [
+            'A single window with a clear edge against the wallpaper.',
+            'A phone or laptop mockup that is not cropped through the bezel.',
+            'Dark UI on a light desktop, or the reverse — contrast helps.',
+          ],
+          paragraphs: [
+            'OS shadows and rounded corners are the hard part. If the model eats a shadow you wanted, restore it with the brush or drop the PNG onto a new shadow in Figma. If it leaves wallpaper in the corners, erase those patches.',
+          ],
+        },
+        {
+          heading: 'When not to use a cut-out',
+          paragraphs: [
+            'If you need a pixel-perfect device frame, a designed mockup kit is cleaner. Use this when you have a real capture and ten minutes, not a design system. For slides and Notion docs, a slightly soft edge on a solid slide colour disappears.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to cut a screenshot off the desktop',
+        steps: [
+          {
+            name: 'Capture one subject',
+            text: 'One window or one device. Hide extra panels first.',
+          },
+          {
+            name: 'Drop the PNG or JPG',
+            text: 'Processing stays in this tab — useful for unreleased UI.',
+          },
+          {
+            name: 'Compare edges',
+            text: 'Check rounded corners and the OS shadow on the slider.',
+          },
+          {
+            name: 'Export transparent or solid',
+            text: 'Transparent for mockups; a brand colour for slides.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Will it keep rounded window corners?',
+          a: 'Usually yes when contrast is decent. Refine if a corner is squared off.',
+        },
+        {
+          q: 'Can I isolate a region of the UI, not the whole window?',
+          a: 'Crop first, then run the tool. It looks for one main subject.',
+        },
+        {
+          q: 'Retina screenshots?',
+          a: 'Full resolution is kept. Very large 5K captures may strain older laptops.',
+        },
+        {
+          q: 'Is unpublished UI uploaded?',
+          a: 'No. That is the point of a screenshot workflow on freebg.app.',
+        },
+        {
+          q: 'Browser chrome in the shot',
+          a: 'Crop the address bar out before you drop the file if you only want the page.',
+        },
+        {
+          q: 'Video stills?',
+          a: 'A single frame as JPG/PNG works. We do not process video files.',
+        },
+      ],
+    },
+
+    signature: {
+      title:
+        'Remove Background From a Signature – Free Transparent PNG | freebg.app',
+      description:
+        'Remove a signature background free. Scan to transparent PNG for email, contracts and PDFs. No upload, no watermark.',
+      h1: 'Remove the background from a signature',
+      subtitle:
+        'Scan or photo to transparent PNG. Stays on your device.',
+      intro:
+        'A wet-ink signature on lined paper does not belong in an email footer as a grey rectangle. You need ink on a transparent PNG. Signatures are also identity data — do not upload them to a random cloud cutter. Drop a scan above and keep the file local.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'How to photograph the signature',
+          bullets: [
+            'White or very light unlined paper. Lines become “ink” to the model.',
+            'Even daylight; avoid a hard shadow from your hand.',
+            'Fill the frame. A tiny scribble in a huge photo leaves junk at the edges.',
+            'JPG or PNG. Phone HEIC: convert to JPG first.',
+          ],
+        },
+        {
+          heading: 'After the cut-out',
+          paragraphs: [
+            'If faint paper texture remains, export onto white for a contract PDF, or paint it out with the eraser. For email, a small transparent PNG is enough — shrink it on FreePNG so it does not dwarf the message. For a reusable PDF stamp, keep the full-resolution PNG and place it in FreePDF or your editor.',
+            'A scanned signature can be abused if it leaks. Because nothing is uploaded, closing the tab is the whole retention policy.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to make a transparent signature PNG',
+        steps: [
+          {
+            name: 'Sign on blank paper',
+            text: 'Dark ink, no lines, good light.',
+          },
+          {
+            name: 'Drop the photo or scan',
+            text: 'The model runs in the browser. The signature is not posted.',
+          },
+          {
+            name: 'Keep transparency',
+            text: 'Or choose white if the PNG is going straight onto a paper-like PDF.',
+          },
+          {
+            name: 'Download and store it yourself',
+            text: 'We never see the file, so we cannot recover it later.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Will blue or black ink survive?',
+          a: 'Yes in typical scans. Very pale pencil is a poor source — resign with a darker pen.',
+        },
+        {
+          q: 'Lined notebook paper?',
+          a: 'Lines often remain. Use blank paper or erase the rules after the cut-out.',
+        },
+        {
+          q: 'Is this legally “my signature”?',
+          a: 'It is a picture of your mark. Contract rules depend on your jurisdiction. This tool only removes paper.',
+        },
+        {
+          q: 'Do you store signatures?',
+          a: 'No. They never reach our servers.',
+        },
+        {
+          q: 'Email size',
+          a: 'Resize the PNG after export. A 4000 px signature is unnecessary in Gmail.',
+        },
+        {
+          q: 'Multiple signatures at once?',
+          a: 'Yes — batch and ZIP, still local.',
+        },
+      ],
+    },
+
+    removeBgShutdown: {
+      title:
+        'remove.bg Is Shutting Down (1 Dec 2026) – What To Do | freebg.app',
+      description:
+        'remove.bg standalone site closes 1 December 2026. Credits expire. API moves to Leonardo. Free no-upload alternative you can use today.',
+      h1: 'remove.bg is shutting down on 1 December 2026',
+      subtitle:
+        'Site, credits and self-serve API all change that morning. A free local tool is above.',
+      intro:
+        'Canva is retiring the standalone remove.bg website on 1 December 2026 at 9:00 a.m. CET. Unused credits expire the same morning. The self-serve API moves to Leonardo.Ai. If you want a page that still does one job — drop image, download PNG — use the tool above. Details below are from remove.bg’s own FAQ and terms, not rumours.',
+      showTool: true,
+      sections: [
+        {
+          heading: 'The three things that happen on 1 December',
+          bullets: [
+            'The standalone site stops. Consumer cut-outs move into Canva.',
+            'Unused credits (PAYG, rollover, promos) expire and are not refunded or moved to Canva.',
+            'Self-serve API access moves to Leonardo.Ai. Existing enterprise API contracts are a separate case — read remove.bg’s FAQ.',
+          ],
+          paragraphs: [
+            'If you still have a credit balance, spend it before that morning or write it off. Do not buy a new pack in late November unless you will burn it.',
+          ],
+        },
+        {
+          heading: 'What to use instead of the standalone site',
+          paragraphs: [
+            'Stay in Canva if the cut-out is one step inside a larger design. Move the API to Leonardo if you already integrate Canva’s stack. Switch to a no-upload tool like freebg.app if you wanted the old remove.bg tab: unlimited HD, no account, photos on your device. Our remove.bg alternative page has the side-by-side.',
+            'Bookmark this site. There is nothing to export from remove.bg except the habit of dropping a file.',
+          ],
+        },
+        {
+          heading: 'Why this page exists',
+          paragraphs: [
+            'Search is filling up with “remove.bg shutting down” posts that bury the date under a sign-up wall. You should be able to read the facts and try a replacement in the same view. We are not Canva; we do not have your credits; we cannot transfer them.',
+          ],
+        },
+      ],
+      howTo: {
+        name: 'How to leave remove.bg before 1 December 2026',
+        steps: [
+          {
+            name: 'Spend or accept lost credits',
+            text: 'Use remaining PAYG credits on remove.bg before 1 December 2026, 9:00 a.m. CET.',
+          },
+          {
+            name: 'Cancel billing you do not need',
+            text: 'Stop monthly plans so you are not charged for a product that is about to vanish.',
+          },
+          {
+            name: 'Pick a replacement workflow',
+            text: 'Canva for suite work, Leonardo for API, freebg.app for private unlimited cut-outs.',
+          },
+          {
+            name: 'Test a real file here',
+            text: 'Drop a product shot above. Download HD with no watermark and no account.',
+          },
+        ],
+      },
+      faq: [
+        {
+          q: 'Is remove.bg really shutting down?',
+          a: 'The standalone website is scheduled to be unavailable from 1 December 2026 at 9:00 a.m. CET. Background removal continues inside Canva. Confirm on remove.bg’s FAQ — dates can be restated by Canva.',
+        },
+        {
+          q: 'Do credits become Canva Pro credits?',
+          a: 'No. Unused credits expire that day and are non-refundable per remove.bg’s terms.',
+        },
+        {
+          q: 'What happens to the API?',
+          a: 'Self-serve API moves to Leonardo.Ai from 1 December 2026. Enterprise contracts may continue — check the contract and remove.bg’s API page.',
+        },
+        {
+          q: 'Is freebg.app affiliated with Canva or remove.bg?',
+          a: 'No. It is an independent, open-source, in-browser tool.',
+        },
+        {
+          q: 'Can you import my remove.bg history?',
+          a: 'No. We never received those files. Keep your own originals.',
+        },
+        {
+          q: 'Will this site stay a simple tool?',
+          a: 'Yes. No Canva account, no credit pack, no upload.',
         },
       ],
     },

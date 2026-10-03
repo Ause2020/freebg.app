@@ -4,19 +4,122 @@ import { useI18n } from '../i18n'
 import { routePath, type PageKey } from '../content/routes'
 import { SISTER_SITES } from '../content/site'
 
-const CANDIDATES: PageKey[] = [
+const DEFAULT_RELATED: PageKey[] = [
   'home',
   'removeBgAlternative',
-  'photoroomAlternative',
+  'amazonWhite',
   'noUpload',
-  'guide',
+  'logo',
   'productPhotos',
-  'profilePictures',
 ]
+
+const RELATED: Partial<Record<PageKey, PageKey[]>> = {
+  home: [
+    'removeBgAlternative',
+    'removeBgShutdown',
+    'amazonWhite',
+    'logo',
+    'noUpload',
+    'productPhotos',
+  ],
+  removeBgAlternative: [
+    'removeBgShutdown',
+    'photoroomAlternative',
+    'noUpload',
+    'amazonWhite',
+    'home',
+    'guide',
+  ],
+  removeBgShutdown: [
+    'removeBgAlternative',
+    'noUpload',
+    'photoroomAlternative',
+    'amazonWhite',
+    'home',
+    'guide',
+  ],
+  photoroomAlternative: [
+    'removeBgAlternative',
+    'amazonWhite',
+    'productPhotos',
+    'noUpload',
+    'logo',
+    'home',
+  ],
+  noUpload: [
+    'removeBgAlternative',
+    'logo',
+    'signature',
+    'profilePictures',
+    'guide',
+    'home',
+  ],
+  amazonWhite: [
+    'productPhotos',
+    'logo',
+    'photoroomAlternative',
+    'removeBgAlternative',
+    'screenshot',
+    'home',
+  ],
+  productPhotos: [
+    'amazonWhite',
+    'logo',
+    'photoroomAlternative',
+    'screenshot',
+    'home',
+    'guide',
+  ],
+  logo: [
+    'screenshot',
+    'signature',
+    'amazonWhite',
+    'noUpload',
+    'productPhotos',
+    'home',
+  ],
+  screenshot: [
+    'logo',
+    'signature',
+    'guide',
+    'noUpload',
+    'productPhotos',
+    'home',
+  ],
+  signature: [
+    'logo',
+    'screenshot',
+    'noUpload',
+    'profilePictures',
+    'guide',
+    'home',
+  ],
+  profilePictures: [
+    'signature',
+    'noUpload',
+    'guide',
+    'home',
+    'removeBgAlternative',
+    'amazonWhite',
+  ],
+  guide: [
+    'noUpload',
+    'amazonWhite',
+    'logo',
+    'screenshot',
+    'removeBgAlternative',
+    'home',
+  ],
+}
+
+function relatedFor(current: PageKey): PageKey[] {
+  const pool = RELATED[current] ?? DEFAULT_RELATED
+  return pool.filter((key) => key !== current).slice(0, 6)
+}
 
 export function RelatedLinks({ current }: { current: PageKey }) {
   const { t, locale } = useI18n()
-  const others = CANDIDATES.filter((key) => key !== current)
+  const others = relatedFor(current)
 
   return (
     <div className="mt-12 space-y-8">

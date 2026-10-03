@@ -8,8 +8,15 @@ const TOOL_KEYS: PageKey[] = [
   'removeBgAlternative',
   'photoroomAlternative',
   'noUpload',
+  'removeBgShutdown',
   'guide',
+]
+const USE_CASE_KEYS: PageKey[] = [
+  'amazonWhite',
   'productPhotos',
+  'logo',
+  'screenshot',
+  'signature',
   'profilePictures',
 ]
 const LEGAL_KEYS: PageKey[] = ['privacy', 'terms', 'contact']
@@ -19,7 +26,7 @@ export function Footer() {
 
   return (
     <footer className="mt-auto w-full border-t-2 border-ink/10 bg-white dark:border-white/10 dark:bg-[#0d0d13]">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1fr]">
         <div>
           <p className="text-sm font-black text-ink dark:text-white">
             {t.footer.heading}
@@ -33,6 +40,22 @@ export function Footer() {
           <h2 className="eyebrow mb-3">{t.footer.product}</h2>
           <ul className="space-y-2">
             {TOOL_KEYS.map((key) => (
+              <li key={key}>
+                <Link
+                  to={routePath(key, locale)}
+                  className="text-sm font-medium text-ink/60 transition hover:text-primary dark:text-white/50 dark:hover:text-primary-light"
+                >
+                  {t.nav[key]}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav aria-label={t.footer.useCases}>
+          <h2 className="eyebrow mb-3">{t.footer.useCases}</h2>
+          <ul className="space-y-2">
+            {USE_CASE_KEYS.map((key) => (
               <li key={key}>
                 <Link
                   to={routePath(key, locale)}

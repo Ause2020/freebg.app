@@ -9,6 +9,11 @@ export type PageKey =
   | 'removeBgAlternative'
   | 'photoroomAlternative'
   | 'noUpload'
+  | 'amazonWhite'
+  | 'logo'
+  | 'screenshot'
+  | 'signature'
+  | 'removeBgShutdown'
   | 'privacy'
   | 'terms'
   | 'contact'
@@ -116,6 +121,81 @@ export const ROUTES: readonly RouteDef[] = [
     path: '/es/quitar-fondo-sin-subir-imagen',
     priority: 0.8,
     changefreq: 'monthly',
+  },
+
+  {
+    key: 'amazonWhite',
+    locale: 'en',
+    path: '/amazon-white-background',
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+  {
+    key: 'amazonWhite',
+    locale: 'es',
+    path: '/es/fondo-blanco-amazon',
+    priority: 0.8,
+    changefreq: 'monthly',
+  },
+
+  {
+    key: 'logo',
+    locale: 'en',
+    path: '/remove-background-from-logo',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+  {
+    key: 'logo',
+    locale: 'es',
+    path: '/es/quitar-fondo-logo',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  {
+    key: 'screenshot',
+    locale: 'en',
+    path: '/remove-background-from-screenshot',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+  {
+    key: 'screenshot',
+    locale: 'es',
+    path: '/es/quitar-fondo-captura',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  {
+    key: 'signature',
+    locale: 'en',
+    path: '/remove-background-from-signature',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+  {
+    key: 'signature',
+    locale: 'es',
+    path: '/es/quitar-fondo-firma',
+    priority: 0.7,
+    changefreq: 'monthly',
+  },
+
+  {
+    key: 'removeBgShutdown',
+    locale: 'en',
+    path: '/remove-bg-shutting-down',
+    priority: 0.9,
+    changefreq: 'weekly',
+  },
+  {
+    key: 'removeBgShutdown',
+    locale: 'es',
+    path: '/es/remove-bg-cierra',
+    priority: 0.9,
+    changefreq: 'weekly',
   },
 
   { key: 'privacy', locale: 'en', path: '/privacy', priority: 0.3, changefreq: 'yearly' },

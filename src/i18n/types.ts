@@ -64,6 +64,11 @@ export type Dictionary = {
     removeBgAlternative: string
     photoroomAlternative: string
     noUpload: string
+    amazonWhite: string
+    logo: string
+    screenshot: string
+    signature: string
+    removeBgShutdown: string
     privacy: string
     terms: string
     contact: string
@@ -166,6 +171,7 @@ export type Dictionary = {
     heading: string
     body: string
     product: string
+    useCases: string
     legal: string
     moreTools: string
     openSource: string
